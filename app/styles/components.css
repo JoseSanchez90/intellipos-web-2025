@@ -1,0 +1,28 @@
+@keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-marquee {
+    animation: marquee var(--duration) linear infinite;
+  }
+
+  /* Animación Ripple */
+@keyframes ripple {
+  from {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0.4;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 6s ease-in-out infinite;
+}
