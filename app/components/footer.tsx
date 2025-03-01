@@ -1,5 +1,6 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return ( 
@@ -15,19 +16,11 @@ const Footer = () => {
               </p>
               <div className="flex flex-row justify-center space-x-4">
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Facebook className="h-5 w-5" />
+                    <FaFacebook className="w-5 h-5" />
                   <span className="sr-only">Facebook</span>
                 </Link>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Instagram className="h-5 w-5" />
-                  <span className="sr-only">Instagram</span>
-                </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Linkedin className="h-5 w-5" />
+                    <FaLinkedin className="w-5 h-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Link>
               </div>
