@@ -1,6 +1,6 @@
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MonitorSmartphone } from "lucide-react";
+import { MonitorSmartphone, Server, ShieldCheck } from "lucide-react";
 
 const CardHome = () => {
     return ( 
@@ -17,10 +17,10 @@ const CardHome = () => {
                     </p>
                 </div>
             </div>
-            <div className="grid grid-cols-3 max-w-5xl gap-20">
-                <Card className="relative w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+            <div className="grid grid-cols-3 max-w-6xl gap-20">
+                <Card className="relative w-[350px] overflow-hidden hover:shadow-lg bg-gray-50 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
-                        <div className="p-2 rounded-full bg-green-100 mb-2">
+                        <div className="p-2 rounded-full bg-green-200 mb-2">
                             <MonitorSmartphone className="h-10 w-10 text-black" />
                         </div>
                     </CardHeader>
@@ -34,15 +34,15 @@ const CardHome = () => {
                         className="from-transparent via-green-500 to-transparent"
                     />
                 </Card>
-                <Card className="relative w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                <Card className="relative w-[350px] overflow-hidden hover:shadow-lg bg-gray-50 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
-                        <div className="p-2 rounded-full bg-green-100 mb-2">
-                            <MonitorSmartphone className="h-10 w-10 text-black" />
+                        <div className="p-2 rounded-full bg-green-200 mb-2">
+                            <Server className="h-10 w-10 text-black" />
                         </div>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-2 text-center">
-                        <CardTitle>Interfaz Intuitiva</CardTitle>
-                        <CardDescription>Diseñada para facilitar la operación y reducir el tiempo de capacitación.</CardDescription>
+                        <CardTitle>Alta Disponibilidad</CardTitle>
+                        <CardDescription>Sistemas robustos que garantizan la continuidad de tu negocio.</CardDescription>
                     </CardContent>
                     <BorderBeam
                         duration={6}
@@ -50,15 +50,15 @@ const CardHome = () => {
                         className="from-transparent via-green-500 to-transparent"
                     />
                 </Card>
-                <Card className="relative w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                <Card className="relative w-[350px] overflow-hidden hover:shadow-lg bg-gray-50 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
-                        <div className="p-2 rounded-full bg-green-100 mb-2">
-                            <MonitorSmartphone className="h-10 w-10 text-black" />
+                        <div className="p-2 rounded-full bg-green-200 mb-2">
+                            <ShieldCheck className="h-10 w-10 text-black" />
                         </div>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-2 text-center">
-                        <CardTitle>Interfaz Intuitiva</CardTitle>
-                        <CardDescription>Diseñada para facilitar la operación y reducir el tiempo de capacitación.</CardDescription>
+                        <CardTitle>Seguridad Avanzada</CardTitle>
+                        <CardDescription>Protección de datos y transacciones con los más altos estándares.</CardDescription>
                     </CardContent>
                     <BorderBeam
                         duration={6}  

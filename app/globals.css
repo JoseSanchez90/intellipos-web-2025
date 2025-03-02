@@ -132,8 +132,8 @@ body {
     @apply bg-background text-foreground;
   }
 
-  /* Animación horizontal Marquee.tsx */
-/* @keyframes marquee {
+/* Animación horizontal Marquee.tsx */
+@keyframes marquee {
   from {
     transform: translateX(100%);
   }
@@ -144,19 +144,21 @@ body {
 
 .animate-marquee {
   animation: marquee var(--duration) linear infinite;
-} */
-
-/* Animación vertical */
-/* @keyframes marquee-vertical {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(-100%);
-  }
 }
 
-.animate-marquee-vertical {
-  animation: marquee-vertical var(--duration) linear infinite;
-} */
+/* Animación Ripple */
+@keyframes ripple {
+from {
+  transform: translate(-50%, -50%) scale(0.1);
+  opacity: 0.4;
+}
+to {
+  transform: translate(-50%, -50%) scale(1.2);
+  opacity: 0;
+}
+}
+
+.animate-ripple {
+animation: ripple 6s ease-in-out infinite;
+}
 }

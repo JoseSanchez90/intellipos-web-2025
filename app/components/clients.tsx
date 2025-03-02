@@ -45,14 +45,14 @@ const ReviewCard = ({
 }) => {
     return (
         <figure className={cn(
-            "relative h-40 w-80 overflow-hidden rounded-xl border",
+            "relative h-40 w-80 overflow-hidden rounded-xl border ",
             // light styles
             "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
             // dark styles
             "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
             )}>
             
-                <img className="rounded-lg" width="full" height="full" alt="" src={img} />
+                <img className="rounded-lg cursor-pointer" width="full" height="full" alt="" src={img} />
 
         </figure>
     )
@@ -60,8 +60,8 @@ const ReviewCard = ({
 
 const Clients = () => {
     return ( 
-        <div className="w-full h-screen flex flex-col justify-center items-center overflow-hidden space-y-6">
-            <div className="space-y-2">
+        <div className="w-full h-screen flex flex-col justify-center items-center overflow-hidden gap-10">
+            <div className="flex flex-col justify-center items-center gap-5">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Nuestros <span className="text-green-500">Clientes</span></h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">Empresas que confían en IntelliPOS para sus operaciones diarias</p>
             </div>
