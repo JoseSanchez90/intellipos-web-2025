@@ -14,7 +14,7 @@ const Ready = () => {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                     <Link href="/contactanos">
-                        <Button size="lg" className="gap-1 cursor-pointer bg-green-600 hover:bg-green-500">
+                        <Button size="lg" className="gap-1 cursor-pointer text-white bg-green-600 hover:bg-green-500">
                         Contáctanos <ArrowRight className="h-4 w-4" />
                         </Button>
                     </Link>

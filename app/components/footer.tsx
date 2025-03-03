@@ -30,11 +30,6 @@ const Footer = () => {
                 <h3 className="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
                 <ul className="space-y-2 text-sm">
                     <li>
-                    <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                        Inicio
-                    </Link>
-                    </li>
-                    <li>
                     <Link href="/nosotros" className="text-muted-foreground hover:text-primary transition-colors">
                         Nosotros
                     </Link>
@@ -62,18 +57,8 @@ const Footer = () => {
                     </Link>
                     </li>
                     <li>
-                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                        Soporte Técnico
-                    </Link>
-                    </li>
-                    <li>
-                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                        Documentación
-                    </Link>
-                    </li>
-                    <li>
-                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                        FAQ
+                    <Link href="contactanos" className="text-muted-foreground hover:text-primary transition-colors">
+                        Contáctanos
                     </Link>
                     </li>
                 </ul>
@@ -83,9 +68,9 @@ const Footer = () => {
               <div className="flex flex-col">
                 <h3 className="text-lg font-semibold mb-4">Contacto</h3>
                 <ul className="space-y-2 text-sm">
-                    <li className="text-muted-foreground">Av. Principal #123, Ciudad</li>
-                    <li className="text-muted-foreground">info@intellipos.com</li>
-                    <li className="text-muted-foreground">+1 (555) 123-4567</li>
+                    <li className="text-muted-foreground">Calle Sanzio #150, Surquillo</li>
+                    <li className="text-muted-foreground">contacto@intellipos.com.pe</li>
+                    <li className="text-muted-foreground">01 776 9520</li>
                 </ul>
               </div>
             </div>

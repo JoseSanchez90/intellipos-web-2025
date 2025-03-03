@@ -71,7 +71,7 @@ const Team = [
 const About = () => {
     return ( 
         <>
-            <div className="relative h-[500px] 2xl:h-[580px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border">
+            <div className="relative h-[500px] 2xl:h-[580px] mx-20 rounded-lg overflow-auto flex justify-center items-center border">
                 {/* Imagen de fondo con desenfoque */}
                 <div className="absolute inset-0">
                 <Image src={fondo} alt="nosotros background" fill className="object-cover bg-cover" />
