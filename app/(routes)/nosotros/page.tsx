@@ -96,7 +96,7 @@ const About = () => {
                 <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
                     <Card className="relative overflow-hidden hover:shadow-lg dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                         <CardContent className="p-6">
-                            <div className="flex justify-start items-center gap-10 mb-4">
+                            <div className="flex justify-center items-center gap-10 mb-4">
                                 <h3 className="text-xl font-bold">Misión</h3>
                                 <Image src={hands} alt="manos" className="w-12" />
                             </div>
@@ -114,7 +114,7 @@ const About = () => {
                     </Card>
                     <Card className="relative overflow-hidden hover:shadow-lg dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                         <CardContent className="p-6">
-                            <div className="flex justify-start items-center gap-10 mb-4">
+                            <div className="flex justify-center items-center gap-10 mb-4">
                                 <h3 className="text-xl font-bold">Visión</h3>
                                 <Image src={plane} alt="manos" className="w-12" />
                             </div> 
@@ -142,7 +142,7 @@ const About = () => {
                 <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-3">
                     {Valores.map((value, id) => (
                         <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:bg-black dark:shadow-gray-600 transition-all duration-150">
-                        <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
+                        <CardContent className="flex flex-col items-center text-center space-y-2">
                           <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
                           <h3 className="text-xl font-bold">{value.title}</h3>
                           <p className="text-muted-foreground">{value.description}</p>

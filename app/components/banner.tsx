@@ -3,7 +3,7 @@ import { ArrowRight, ShoppingCart } from "lucide-react";
 
 const Banner = () => {
     return ( 
-      <div className="relative h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border border-gray-900 2xl:mt-10">
+      <div className="relative h-[500px] 2xl:h-[580px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border border-gray-900 ">
         {/* Imagen de fondo con desenfoque */}
         <div className="absolute inset-0">
           <video
@@ -25,7 +25,7 @@ const Banner = () => {
             <p className="mt-4 text-xl text-white font-semibold">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
           </div>
           <div className="flex justify-center items-center gap-5 mt-4">
-            <Button className="w-40 bg-white text-black hover:bg-gray-200 cursor-pointer">Solicitar Demo <ArrowRight className="h-4 w-4"/></Button>
+            <Button className="w-40 bg-green-600 text-white hover:bg-green-500 cursor-pointer">Solicitar Demo <ArrowRight className="h-4 w-4"/></Button>
             <Button className="w-40 bg-white text-black hover:bg-gray-200 cursor-pointer">Ver Productos <ShoppingCart className="h-4 w-4"/></Button>
           </div>
         </div>

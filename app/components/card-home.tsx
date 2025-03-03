@@ -17,7 +17,7 @@ const CardHome = () => {
                     </p>
                 </div>
             </div>
-            <div className="grid grid-cols-3 max-w-6xl gap-20">
+            <div className="grid grid-cols-3 max-w-6xl lg:gap-5 2xl:gap-10">
                 <Card className="relative w-[350px] overflow-hidden hover:shadow-lg bg-gray-50 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
                         <div className="p-2 rounded-full bg-green-200 mb-2">
