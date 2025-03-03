@@ -71,7 +71,7 @@ const Team = [
 const About = () => {
     return ( 
         <>
-            <div className="relative h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border border-gray-200 2xl:mt-10">
+            <div className="relative h-[500px] 2xl:h-[580px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border">
                 {/* Imagen de fondo con desenfoque */}
                 <div className="absolute inset-0">
                 <Image src={fondo} alt="nosotros background" fill className="object-cover bg-cover" />
@@ -80,7 +80,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-black/60"></div>
         
                 <div className="absolute flex flex-col items-center justify-center">
-                <div className="p-5 bg-opacity-50 rounded-l text-center max-w-3xl">
+                <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl">
                     <h1 className="text-5xl text-white font-bold">Sobre <span className="text-5xl text-green-400 font-bold">Intelli</span>POS</h1>
                     <p className="mt-4 text-xl text-white font-semibold">Conoce nuestra historia y misión como proveedores líderes de sistemas Aloha NCR IntelliPOS nació en 2005 con la visión de transformar la manera en que los negocios gestionan sus operaciones de venta. Desde entonces, nos hemos convertido en líderes en la implementación de sistemas Aloha NCR, ayudando a cientos de empresas a optimizar sus procesos y mejorar la experiencia de sus clientes.</p>
                 </div>
