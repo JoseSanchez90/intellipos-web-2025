@@ -32,7 +32,7 @@ const reviews = [
       },
       {
         id: 8,
-        img: "/images/peruanito.png",
+        img: " /images/elperuanito.png",
       },
 ]
 
