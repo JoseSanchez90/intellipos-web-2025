@@ -3,7 +3,7 @@ import { ArrowRight, ShoppingCart } from "lucide-react";
 
 const Banner = () => {
     return ( 
-      <div className="relative h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border border-gray-900 mt-10">
+      <div className="relative h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border border-gray-900 2xl:mt-10">
         {/* Imagen de fondo con desenfoque */}
         <div className="absolute inset-0">
           <video

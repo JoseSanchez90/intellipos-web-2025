@@ -14,12 +14,12 @@ const Ready = () => {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                     <Link href="/contactanos">
-                        <Button size="lg" className="gap-1">
+                        <Button size="lg" className="gap-1 cursor-pointer">
                         Contáctanos <ArrowRight className="h-4 w-4" />
                         </Button>
                     </Link>
                     <Link href="/productos">
-                        <Button size="lg" variant="outline">
+                        <Button size="lg" variant="outline" className="cursor-pointer">
                         Ver Productos
                         </Button>
                     </Link>
