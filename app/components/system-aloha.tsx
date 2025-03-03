@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SystemAloha = () => {
     return ( 
-        <div className="relative h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center">
+        <div className="relative h-[450px] 2xl:h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center">
         {/* Imagen de fondo con desenfoque */}
         <div className="absolute inset-0">
           <video
@@ -16,7 +16,7 @@ const SystemAloha = () => {
             >
             <source src="/video/video2.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-black/70"></div>
         </div>
             <div className="absolute max-w-3xl flex flex-col justify-center items-center space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Sistema <span className="text-green-500">Aloha</span> NCR</h2> 

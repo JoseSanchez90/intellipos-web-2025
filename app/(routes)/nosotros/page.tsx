@@ -71,7 +71,7 @@ const Team = [
 const About = () => {
     return ( 
         <>
-            <div className="relative h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border border-gray-200 mt-10">
+            <div className="relative h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center border border-gray-200 2xl:mt-10">
                 {/* Imagen de fondo con desenfoque */}
                 <div className="absolute inset-0">
                 <Image src={fondo} alt="nosotros background" fill className="object-cover bg-cover" />
@@ -157,7 +157,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="h-screen flex justify-center items-center mx-20">
+            <div className="h-screen flex justify-center items-center mx-20 mb-20 2xl:mb-0">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nuestro <span className="text-green-500">Equipo</span></h2>
@@ -168,7 +168,7 @@ const About = () => {
                             <Card key={id} className="w-72 h-full relative overflow-hidden hover:shadow-lg dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                                 <CardContent className="flex flex-col items-center text-center space-y-2">
                                     <div className="relative h-full overflow-hidden rounded-full">
-                                        <SpinningText className="text-green-600 text-md font-bold top-14">IntelliPOS - IntelliPOS - </SpinningText>
+                                        <SpinningText className="text-green-600 text-md font-bold top-14">intellipos - intellipos - </SpinningText>
                                         <div className="h-28 w-28">{value.image}</div>
                                     </div>
                                     <h3 className="text-xl font-bold">{value.name}</h3>
