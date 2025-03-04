@@ -4,24 +4,36 @@ import Link from "next/link";
 
 const SystemAloha = () => {
     return (
-        <section id="System" className="w-full h-screen justify-center items-center mb-20">
-        <div className="relative h-[450px] 2xl:h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center">
-        {/* Imagen de fondo con desenfoque */}
-        <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-            >
-            <source src="/video/video2.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-black/70"></div>
-        </div>
-            <div className="absolute max-w-3xl flex flex-col justify-center items-center space-y-4">
+        <section id="#System" className="relative h-[580px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900 mt-28 sm:mt-0">
+            {/* Imagen de fondo con desenfoque */}
+            <div className="hidden sm:flex absolute inset-0">
+            <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
+                >
+                <source src="/video/video2.mp4" type="video/mp4" />
+            </video>
+            </div>
+            <div className="sm:hidden flex absolute inset-0">
+            <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
+                >
+                <source src="/video/video4.mp4" type="video/mp4" />
+            </video>
+            </div>
+
+            <div className="absolute inset-0 bg-black/70"></div>
+
+            <div className="absolute max-w-3xl flex flex-col justify-center items-center space-y-4 px-5">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Sistema <span className="text-green-500">Aloha</span> NCR</h2> 
-                <p className="text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">Ofrecemos soluciones integrales para la gestión de tu negocio, desde el punto de venta hasta el análisis de datos</p>
+                <p className="text-white md:text-xl text-center">Ofrecemos soluciones integrales para la gestión de tu negocio, desde el punto de venta hasta el análisis de datos</p>
                 <div>
                 <ul className="grid gap-2 text-left max-w-md mx-auto text-lg text-white">
                     {[
@@ -32,8 +44,8 @@ const SystemAloha = () => {
                         "Soporte técnico 24/7",
                     ].map((item, index) => (
                         <li key={index} className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-green-500" />
-                        <span>{item}</span>
+                            <CheckCircle className="h-5 w-5 text-green-500" />
+                            <span className="text-sm md:text-xl">{item}</span>
                         </li>
                     ))}
                     </ul>
@@ -46,8 +58,7 @@ const SystemAloha = () => {
                     </div>
                 </div>   
             </div>  
-        </div>
-        </section> 
+        </section>
      );
 }
  

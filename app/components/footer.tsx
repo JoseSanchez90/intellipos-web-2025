@@ -64,7 +64,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-full flex justify-center">
+            <div className="hidden w-full md:flex justify-center">
               <div className="flex flex-col">
                 <h3 className="text-lg font-semibold mb-4">Contacto</h3>
                 <ul className="space-y-2 text-sm">
