@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SystemAloha = () => {
     return (
-        <section id="#System" className="relative h-[580px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900 mt-28 sm:mt-0">
+        <section id="#System" className="relative h-[580px] lg:h-[500px] 2xl:h-[580px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900 mt-28 sm:mt-0">
             {/* Imagen de fondo con desenfoque */}
             <div className="hidden sm:flex absolute inset-0">
             <video
