@@ -125,7 +125,7 @@ const Services = () => {
         </div>
 
         {/* Servicios Principales */}
-        <div className="h-full flex flex-col justify-center items-center mt-20 lg:mt-36 2xl:mt-40 mb-20">
+        <section id="Services" className="h-full flex flex-col justify-center items-center mt-20 lg:mt-36 2xl:mt-40 mb-20">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
                     <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Servicios <span className="text-green-500 font-bold">Principales</span></h1>
@@ -148,9 +148,9 @@ const Services = () => {
                   </Card>
                 ))}
             </div>
-        </div>
+        </section>
 
-        <div className="relative h-[500px] 2xl:h-[580px] mx-20 rounded-lg overflow-auto flex justify-center items-center border">
+        <section id="Support" className="relative h-[500px] 2xl:h-[580px] mx-20 rounded-lg overflow-auto flex justify-center items-center border">
             {/* Imagen de fondo con desenfoque */}
             <div className="absolute inset-0">
                 <Image src={soporte} alt="nosotros background" fill className="object-cover bg-cover" />
@@ -165,10 +165,10 @@ const Services = () => {
                     <Button className="w-48 bg-white text-black hover:bg-gray-200 cursor-pointer">Contactar Soporte<ArrowRight className="h-4 w-4"/></Button>
                 </div>
             </div>
-        </div>
+        </section>
 
         {/* Implementacion */}
-        <div className="h-full flex flex-col justify-center items-center mt-20 lg:mt-36 2xl:mt-40 mb-20">
+        <section id="Implementacion" className="h-full flex flex-col justify-center items-center mt-20 lg:mt-36 2xl:mt-40 mb-20">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
                     <h1 className="text-5xl font-bold">Proceso de <span className="text-5xl text-green-400 font-bold">Implementación</span></h1>
@@ -190,9 +190,9 @@ const Services = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div className="w-full h-screen flex flex-col justify-center items-center relative overflow-hidden">
+        <section id="Bussisnes" className="w-full h-screen flex flex-col justify-center items-center relative overflow-hidden">
             <div className="flex flex-col items-center justify-center gap-8 z-10">
                 <div className="flex flex-col gap-5">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Listo para mejorar tu <span className="text-green-500">negocio</span>?</h2>
@@ -210,7 +210,7 @@ const Services = () => {
             <Ripple mainCircleSize={100} />
             </div>
                 
-        </div>
+        </section>
         </>
     );
 };

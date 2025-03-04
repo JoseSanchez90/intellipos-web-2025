@@ -1,44 +1,92 @@
+"use client"
 
-import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import * as React from "react"
+import Link from "next/link"
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
 
-const MenuList = () => {
+export function MenuList() {
 
-    const pathname = usePathname();
+  const pathname = usePathname();
 
-    return ( 
-        <div className="flex justify-center items-center gap-6">
-            <Link href="/" scroll={false} className={`relative group hover:text-green-600 hover:dark:text-green-400 ${pathname === '/' ? 'text-green-600 dark:text-green-400' : ''}`}>
-                Inicio
-                <span className={`absolute -bottom-1 left-0 w-full h-[2.5px] bg-green-600 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${pathname === '/' ? 'scale-x-100' : 'scale-x-0'}`}></span>
-            </Link>
-
-            <Link href="/nosotros" scroll={false} className={`relative group hover:text-green-600 hover:dark:text-green-400 ${pathname === '/nosotros' ? 'text-green-600 dark:text-green-400' : ''}`}>
-                Nosotros
-                <span className={`absolute -bottom-1 left-0 w-full h-[2.5px] bg-green-600 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${pathname === '/nosotros' ? 'scale-x-100' : 'scale-x-0'}`}></span>
-            </Link>
-
-            <Link href="/servicio" scroll={false} className={`relative group hover:text-green-600 ${pathname === '/servicio' ? 'text-green-600 dark:text-green-400' : ''}`}>
-                Servicio
-                <span className={`absolute -bottom-1 left-0 w-full h-[2.5px] bg-green-600 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${pathname === '/servicio' ? 'scale-x-100' : 'scale-x-0'}`}></span>
-            </Link>
-
-            <Link href="/productos" scroll={false} className={`relative group hover:text-green-600 ${pathname === '/productos' ? 'text-green-600 dark:text-green-400' : ''}`}>
-                Productos
-                <span className={`absolute -bottom-1 left-0 w-full h-[2.5px] bg-green-600 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${pathname === '/productos' ? 'scale-x-100' : 'scale-x-0'}`}></span>
-            </Link>
-
-            <Link href="/blog" scroll={false} className={`relative group hover:text-green-600 ${pathname === '/blog' ? 'text-green-600 dark:text-green-400' : ''}`}>
-                Blog
-                <span className={`absolute -bottom-1 left-0 w-full h-[2.5px] bg-green-600 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${pathname === '/blog' ? 'scale-x-100' : 'scale-x-0'}`}></span>
-            </Link>
-
-            <Link href="/contactanos" scroll={false} className={`relative group hover:text-green-600 ${pathname === '/contactanos' ? 'text-green-600 dark:text-green-400' : ''}`}>
-                Contáctanos
-                <span className={`absolute -bottom-1 left-0 w-full h-[2.5px] bg-green-600 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${pathname === '/contactanos' ? 'scale-x-100' : 'scale-x-0'}`}></span>
-            </Link>
-        </div>
-     );
+  return (
+    <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <Link href="/" legacyBehavior passHref scroll={false}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent`}>
+              Inicio
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/nosotros" legacyBehavior passHref scroll={false}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent`}>
+              Nosotros
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/servicio" legacyBehavior passHref scroll={false}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent`}>
+              Servicio
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/productos" legacyBehavior passHref scroll={false}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent`}>
+              Productos
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/blog" legacyBehavior passHref scroll={false}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent`}>
+              Blog
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/contactanos" legacyBehavior passHref scroll={false}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent`}>
+              Contáctanos
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
+  )
 }
- 
-export default MenuList;
+
+// const ListItem = React.forwardRef<
+//   React.ElementRef<"a">,
+//   React.ComponentPropsWithoutRef<"a">
+// >(({ className, title, children, ...props }, ref) => {
+//   return (
+//     <li>
+//       <NavigationMenuLink asChild>
+//         <a
+//           ref={ref}
+//           className={cn(
+//             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+//             className
+//           )}
+//           {...props}
+//         >
+//           <div className="text-sm font-medium leading-none">{title}</div>
+//           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+//             {children}
+//           </p>
+//         </a>
+//       </NavigationMenuLink>
+//     </li>
+//   )
+// })
+// ListItem.displayName = "ListItem"

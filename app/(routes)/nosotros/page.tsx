@@ -87,7 +87,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="mx-20 h-screen flex flex-col justify-center items-center">
+            <section id="Vision" className="mx-20 h-screen flex flex-col justify-center items-center">
                 <div className="flex flex-col items-center justify-center">
                     <div className="p-5 bg-opacity-50 rounded-l text-center max-w-3xl">
                         <h1 className="text-5xl font-bold">Nuestra <span className="text-5xl text-green-400 font-bold">Mision</span> y <span className="text-5xl text-green-400 font-bold">Vision</span></h1>
@@ -130,9 +130,9 @@ const About = () => {
                         />
                     </Card>
                 </div>
-            </div>
+            </section>
 
-            <div className="h-screen mx-20 flex flex-col justify-center items-center">
+            <section id="Valores" className="h-screen mx-20 flex flex-col justify-center items-center">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nuestros <span className="text-green-500">Valores</span></h2>
@@ -155,9 +155,9 @@ const About = () => {
                       </Card>
                     ))}
                 </div>
-            </div>
+            </section>
 
-            <div className="h-screen flex justify-center items-center mx-20 mb-20 2xl:mb-0">
+            <section id="Team" className="h-screen flex justify-center items-center mx-20 mb-20 2xl:mb-0">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nuestro <span className="text-green-500">Equipo</span></h2>
@@ -183,7 +183,7 @@ const About = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </section>
         </>
      );
 }

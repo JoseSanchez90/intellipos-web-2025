@@ -1,33 +1,29 @@
 "use client"
 
-import MenuList from "./menu-list";
 import MenuListMobile from "./menu-list-mobile";
 import { ModeToggle } from "./toggle";
-import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+import { MenuList } from "./menu-list";
 import { useEffect } from "react";
 
 const Navbar = () => {
 
-    const pathname = usePathname();
-    
+    const router = useRouter()
+
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-      }, [pathname]); // Se ejecuta cuando cambia la URL
+      }, []); // Se ejecuta cuando cambia la URL
 
     return ( 
-        <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-black/10 w-full h-20 flex flex-row justify-between items-center px-10 lg:px-24">
-            <div>
-                <a href="/" className="text-2xl font-extrabold text-green-500">INTELLI<span className="text-2xl font-extrabold text-gray-800 dark:text-gray-100">POS</span></a>
-            </div>
+        <nav className="lg:sticky lg:top-0 lg:z-50 lg:backdrop-blur-sm bg-white/70 dark:bg-black/50 flex justify-between items-center p-4 px-5 sm:px-12 lg:px-28 2xl:px-48">
+            <h1 className="text-xl sm:text-2xl font-extrabold text-green-500 cursor-pointer" onClick={() => router.push("/")}>INTELLI<span className="text-xl sm:text-2xl font-extrabold text-gray-800 dark:text-gray-100">POS</span></h1>
             <div className="hidden md:flex">
                 <MenuList />
             </div>
             <div className="flex md:hidden">
                 <MenuListMobile />
             </div>
-            <div>
-                <ModeToggle />
-            </div>
+            <ModeToggle />           
         </nav>
      );
 }

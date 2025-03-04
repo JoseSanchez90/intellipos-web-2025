@@ -60,7 +60,7 @@ const ReviewCard = ({
 
 const Clients = () => {
     return ( 
-        <div className="w-full h-screen flex flex-col justify-center items-center overflow-hidden gap-10">
+        <section id="Clients" className="w-full h-screen flex flex-col justify-center items-center overflow-hidden gap-10">
             <div className="flex flex-col justify-center items-center gap-5">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Nuestros <span className="text-green-500">Clientes</span></h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">Empresas que confían en IntelliPOS para sus operaciones diarias</p>
@@ -74,7 +74,7 @@ const Clients = () => {
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
             </div>
-        </div>
+        </section>
      );
 }
  

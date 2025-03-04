@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Ready = () => {
     return ( 
-        <section className="w-full h-screen flex flex-col justify-center items-center relative overflow-hidden">
+        <section id="Optimization" className="w-full h-screen flex flex-col justify-center items-center relative overflow-hidden">
             <div className="flex flex-col items-center justify-center gap-8 z-10">
                 <div className="flex flex-col gap-5">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Listo para optimizar <span className="text-green-500">tu negocio</span>?</h2>

@@ -4,7 +4,7 @@ import { MonitorSmartphone, Server, ShieldCheck } from "lucide-react";
 
 const CardHome = () => {
     return ( 
-        <div className="w-full h-screen flex flex-col justify-center items-center gap-10 my-10 2xl:my-5">
+        <section id="Ventajas" className="w-full h-screen flex flex-col justify-center items-center gap-10 my-10 2xl:my-5">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
                     <div className="inline-flex items-center rounded-full border border-primary/20 dark:text-black bg-green-100 px-4 py-2 text-sm font-semibold text-primary">
@@ -67,7 +67,7 @@ const CardHome = () => {
                     />
                 </Card>
             </div>
-        </div>
+        </section>
      );
 }
  

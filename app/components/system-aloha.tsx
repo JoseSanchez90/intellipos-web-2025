@@ -3,7 +3,8 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
 
 const SystemAloha = () => {
-    return ( 
+    return (
+        <section id="System" className="w-full h-screen justify-center items-center mb-20">
         <div className="relative h-[450px] 2xl:h-[500px] mx-20 rounded-lg overflow-hidden flex justify-center items-center">
         {/* Imagen de fondo con desenfoque */}
         <div className="absolute inset-0">
@@ -46,6 +47,7 @@ const SystemAloha = () => {
                 </div>   
             </div>  
         </div>
+        </section> 
      );
 }
  
