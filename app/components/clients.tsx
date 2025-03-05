@@ -61,7 +61,7 @@ const ReviewCard = ({
 
 const Clients = () => {
     return ( 
-        <section id="Clients" className="w-full h-full lg:h-screen flex flex-col justify-center items-center overflow-hidden gap-10 mt-28 lg:my-28">
+        <section id="Clients" className="w-full h-full flex flex-col justify-center items-center overflow-hidden gap-10 mt-40">
             <div className="flex flex-col justify-center items-center gap-5">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Nuestros <span className="text-green-500">Clientes</span></h2>
                 <p className="max-w-[900px] text-center">Empresas que confían en IntelliPOS para sus operaciones diarias</p>

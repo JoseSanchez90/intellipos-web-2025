@@ -3,7 +3,7 @@ import { ArrowRight, ShoppingCart } from "lucide-react";
 
 const Banner = () => {
     return ( 
-      <section id="#Banner" className="relative h-[580px] md:h-[500px] 2xl:h-[580px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900">
+      <section className="relative h-[580px] md:h-[500px] 2xl:h-[580px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900 mt-6 md:mt-0 2xl:mt-2">
         {/* Imagen de fondo con desenfoque */}
         <div className="hidden sm:flex absolute inset-0">
           <video
@@ -32,7 +32,7 @@ const Banner = () => {
   
         <div className="absolute flex flex-col items-center justify-center">
           <div className="p-5 bg-opacity-50 rounded-l text-center max-w-3xl">
-            <h1 className="text-3xl md:text-5xl text-white font-bold">Sistema de Venta <span className="text-3xl md:text-5xl text-green-400 font-bold">Aloha NCR</span></h1>
+            <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Sistema de Venta <span className="text-3xl md:text-5xl text-green-400 font-bold">Aloha NCR</span></h1>
             <p className="mt-4 text-sm md:text-xl text-white font-semibold">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-4">

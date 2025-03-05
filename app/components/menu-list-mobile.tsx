@@ -15,6 +15,7 @@ const MenuListMobile = () => {
             </PopoverTrigger>
             <PopoverContent onClick={() => setOpen(!open)} className="w-40">
                 <div className="flex flex-col justify-center items-start">
+                    <Link href="/" className="block" onClick={closePopover}>Inicio</Link>
                     <Link href="/nosotros" className="block" onClick={closePopover}>Nosotros</Link>
                     <Link href="/servicio" className="block" onClick={closePopover}>Servicio</Link>
                     <Link href="/productos" className="block" onClick={closePopover}>Productos</Link>

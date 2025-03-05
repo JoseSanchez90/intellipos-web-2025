@@ -4,8 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return ( 
-    <footer className="bg-gray-100 dark:bg-black">
-        <div className="w-full py-6 px-4 lg:px-8 flex justify-center items-center">
+    <footer className="h-full bg-gray-100 dark:bg-black">
+        <div className="w-full h-full py-6 px-4 lg:px-8 flex justify-center">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
             <div className="space-y-4">
               <div className="text-2xl font-bold text-center">
