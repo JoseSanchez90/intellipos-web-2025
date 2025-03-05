@@ -92,7 +92,7 @@ const Services = () => {
 
     return (
         <>
-        <section className="h-full flex justify-center items-center mt-6 2xl:mt-2">
+        <section className="h-full flex justify-center items-center">
             <div className="h-[550px] md:h-[500px] 2xl:h-[600px] mx-5 md:mx-20 flex justify-center items-center">
                 {/* Grid principal con Bento Layout */}
                 <div className="grid md:grid-cols-3 grid-rows-6 gap-4 w-full h-full relative">
@@ -135,7 +135,7 @@ const Services = () => {
         </section>
 
         {/* Servicios Principales */}
-        <section className="h-screen flex flex-col justify-center items-center mx-5 md:mx-20 2xl:mt-20">
+        <section className="h-full flex flex-col justify-center items-center mx-5 lg:mt-24 2xl:mt-16">
             <div className="h-screen w-full flex flex-col justify-center items-center">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
@@ -165,7 +165,7 @@ const Services = () => {
             </div>
         </section>
 
-        <section className="h-screen flex justify-center items-center px-5 md:mx-20">
+        <section className="h-full flex justify-center items-center px-5 md:mx-20 lg:mt-16">
             <div className="relative w-full h-[580px] md:h-[500px] 2xl:h-[580px]  rounded-lg overflow-auto flex justify-center items-center border">
                 {/* Imagen de fondo con desenfoque */}
                 <div className="absolute inset-0">
@@ -185,8 +185,8 @@ const Services = () => {
         </section>
 
         {/* Implementacion */}
-        <section className="h-screen flex justify-center items-center mx-5">
-            <div className="w-full flex flex-col items-center justify-center space-y-4 text-center">
+        <section className="h-full flex justify-center items-center mx-5 mt-16 lg:mt-24">
+            <div className="w-full h-screen flex flex-col items-center justify-center md:space-y-4 text-center">
                 <div className="space-y-2">
                     <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Proceso de <span className="text-green-400 font-bold">Implementación</span></h1>
                     <p className="mt-4 text-sm md:text-xl font-semibold">
@@ -210,7 +210,7 @@ const Services = () => {
         </section>
 
         <section className="h-full flex justify-center items-center">
-            <div className="w-full h-screen flex flex-col justify-center items-center relative overflow-hidden">
+            <div className="w-full h-[400px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden">
                 <div className="flex flex-col items-center justify-center gap-8 z-10 px-5">
                     <div className="flex flex-col text-center gap-5">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Listo para mejorar tu <span className="text-green-500">negocio</span>?</h2>
