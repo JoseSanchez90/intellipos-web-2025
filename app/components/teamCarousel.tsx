@@ -104,7 +104,7 @@ const TeamCarousel = () => {
           <div className="h-full space-y-6">
                 <div className="flex flex-col justify-center items-center gap-5">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Nuestro <span className="text-green-500">Equipo</span></h2>
-                  <p className="max-w-[900px] text-lg mdtext-xl text-center">Profesionales dedicados a tu éxito</p>
+                  <p className="text-muted-foreground text-center">Profesionales dedicados a tu éxito</p>
                 </div>
                 <div className="relative flex max-w-5xl 2xl:max-w-7xl flex-col items-center justify-center overflow-hidden">
                   <Marquee pauseOnHover className="[--duration:30s]">

@@ -122,7 +122,7 @@ const Services = () => {
                         <Image src={horizontalTwo} alt="fondo horizontal dos" fill className="object-cover" />
                         <div className="absolute inset-0 bg-black/60 rounded-2xl"></div>
                         <div className="hidden md:flex  absolute inset-0 flex-col items-center justify-center text-center px-5 z-10">
-                            <p className="mt-4 text-sm md:text-xl text-white font-semibold max-w-xl">
+                            <p className="mt-4 text-sm md:text-2xl text-white font-semibold max-w-xl">
                             Ofrecemos las mejores soluciones integrales para la gestión de tu negocio con Aloha NCR.
                             </p>
                         </div>
@@ -140,7 +140,7 @@ const Services = () => {
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Servicios <span className="text-green-500 font-bold">Principales</span></h1>
-                        <p className="max-w-[900px] text-lg md:text-xl text-center">Soluciones completas para optimizar tu negocio.</p>
+                        <p className="mt-4 text-muted-foreground text-center">Soluciones completas para optimizar tu negocio.</p>
                     </div>
                 </div>
                 <div className="hidden mx-auto md:grid max-w-5xl gap-4 md:gap-6 md:py-10 md:grid-cols-3 py-6">
@@ -189,7 +189,7 @@ const Services = () => {
             <div className="w-full h-screen flex flex-col items-center justify-center md:space-y-4 text-center">
                 <div className="space-y-2">
                     <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Proceso de <span className="text-green-400 font-bold">Implementación</span></h1>
-                    <p className="mt-4 text-sm md:text-xl font-semibold">
+                    <p className="mt-4 text-muted-foreground text-center">
                         Nuestro enfoque metódico para garantizar una implementación exitosa
                     </p>
                 </div>
@@ -200,8 +200,8 @@ const Services = () => {
                             {value.step}
                             </div>
                             <div className="flex flex-col items-start">
-                                <h3 className="md:text-xl font-bold">{value.title}</h3>
-                                <p className="text-sm md:text-lg md:font-normal text-start">{value.description}</p>
+                                <h3 className="md:text-lg font-bold">{value.title}</h3>
+                                <p className="text-sm md:text-md md:font-normal text-start">{value.description}</p>
                             </div>
                       </div>
                     ))}
@@ -214,7 +214,7 @@ const Services = () => {
                 <div className="flex flex-col items-center justify-center gap-8 z-10 px-5">
                     <div className="flex flex-col text-center gap-5">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Listo para mejorar tu <span className="text-green-500">negocio</span>?</h2>
-                        <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Contáctanos hoy mismo para conocer cómo nuestros servicios pueden ayudarte</p>
+                        <p className="mt-4 text-muted-foreground md:text-lg">Contáctanos hoy mismo para conocer cómo nuestros servicios pueden ayudarte</p>
                     </div>
                     <div className="flex flex-col min-[400px]:flex-row">
                         <Link href="/contactanos">

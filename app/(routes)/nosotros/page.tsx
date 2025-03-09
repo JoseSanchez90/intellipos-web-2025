@@ -6,9 +6,6 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 import hands from "@/app/img/hands.gif"
 import plane from "@/app/img/plane.gif"
 import { Award, Clock, Users } from "lucide-react";
-import user from "@/app/img/user.png"
-import { SpinningText } from "@/components/magicui/spinning-text";
-import Alex from "@/app/img/AlexParedes.png"
 import TeamCarousel from "@/app/components/teamCarousel";
 
 const Valores = [
@@ -31,45 +28,6 @@ const Valores = [
         description: "Nos comprometemos con el éxito de nuestros clientes, ofreciendo soporte continuo y soluciones a largo plazo."
     },
 ]
-
-// const Team = [
-//     {
-//         id: 1,
-//         image: <Image src={Alex} alt="user1" /> ,
-//         name: "Alex Paredes",
-//         position: "Analista de Sistemas",
-//     },
-//     {
-//         id: 2,
-//         image: <Image src={user} alt="user2" /> ,
-//         name: "Daniel Quispe",
-//         position: "Analista de Sistemas",
-//     },
-//     {
-//         id: 3,
-//         image: <Image src={user} alt="user3" /> ,
-//         name: "Jose Castro",
-//         position: "Analista de Sistemas",
-//     },
-//     {
-//         id: 4,
-//         image: <Image src={user} alt="user4" /> ,
-//         name: "Jose Sanchez",
-//         position: "Analista de Sistemas",
-//     },
-//     {
-//         id: 5,
-//         image: <Image src={user} alt="user5" /> ,
-//         name: "Jose Carrasco",
-//         position: "Programador .NET",
-//     },
-//     {
-//         id: 6,
-//         image: <Image src={user} alt="user6" /> ,
-//         name: "Henrry Ordinola",
-//         position: "Coordinador",
-//     },
-// ]
 
 const About = () => {
     return ( 
@@ -148,7 +106,7 @@ const About = () => {
                     <div className="flex flex-col items-center justify-center text-center">
                         <div className="space-y-4">
                             <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Nuestros <span className="text-green-500">Valores</span></h2>
-                            <p className="max-w-[900px] text-lg mdtext-xl text-center">Los principios que guían nuestro trabajo diario</p>
+                            <p className="text-muted-foreground text-center">Los principios que guían nuestro trabajo diario</p>
                         </div>
                     </div>
                     <div className="mx-auto w-72 md:w-full grid md:max-w-5xl gap-4 md:gap-6 md:py-12 md:grid-cols-3">
@@ -171,39 +129,6 @@ const About = () => {
             </section>
 
             <TeamCarousel />
-            {/* <section id="Team" className="h-screen flex justify-center items-center mx-5 my-20 md:my-0">
-                <div className="h-screen">
-                    <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                        <div className="space-y-2">
-                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nuestro <span className="text-green-500">Equipo</span></h2>
-                            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Profesionales dedicados a tu éxito</p>
-                        </div>
-                        <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
-                            {Team.map((value, id) => (
-                                <Card key={id} className="w-72 h-full relative overflow-hidden hover:shadow-lg dark:bg-black dark:shadow-gray-600 transition-all duration-150">
-                                    <CardContent className="flex flex-col items-center text-center pt-2">
-                                        <div className="absolute">
-                                            <SpinningText className="text-green-600 text-sm font-extrabold top-8.5">Intellipos  Intellipos  Intellipos </SpinningText>
-                                        </div>
-                                        <div className="relative h-full overflow-hidden rounded-full border-2 border-gray-200">
-                                            <div className="h-16 w-16">{value.image}</div>
-                                        </div>
-                                        <div className="mt-4">
-                                            <h3 className="text-xl font-bold mt-2">{value.name}</h3>
-                                            <p className="text-sm text-primary">{value.position}</p>
-                                        </div> 
-                                    </CardContent>
-                                    <BorderBeam
-                                        duration={6}
-                                        size={200}
-                                        className="from-transparent via-green-500 to-transparent"
-                                    />
-                                </Card>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section> */}
         </>
      );
 }
