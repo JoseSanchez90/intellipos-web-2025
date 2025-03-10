@@ -140,10 +140,10 @@ const Services = () => {
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Servicios <span className="text-green-500 font-bold">Principales</span></h1>
-                        <p className="mt-4 text-muted-foreground text-center">Soluciones completas para optimizar tu negocio.</p>
+                        <p className="text-muted-foreground text-center">Soluciones completas para optimizar tu negocio.</p>
                     </div>
                 </div>
-                <div className="hidden mx-auto md:grid max-w-5xl gap-4 md:gap-6 md:py-10 md:grid-cols-3 py-6">
+                <div className="hidden mx-auto md:grid max-w-5xl gap-2 md:gap-4 md:py-10 md:grid-cols-3 py-6">
                     {ServicesGeneral.map((value, id) => (
                         <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                             <CardContent className="flex flex-col items-center text-center space-y-2">
@@ -151,12 +151,12 @@ const Services = () => {
                                 <h3 className="text-lg md:text-xl font-bold">{value.title}</h3>
                                 <p className="text-sm md:text-muted-foreground">{value.description}</p>
                             </CardContent>
-                        <BorderBeam
-                            duration={6}
-                            size={200}
-                            className="from-transparent via-green-500 to-transparent"
-                        />
-                            </Card>
+                            <BorderBeam
+                                duration={6}
+                                size={200}
+                                className="from-transparent via-green-500 to-transparent"
+                            />
+                        </Card>
                     ))}
                 </div>
                 <div className="flex md:hidden py-6">
@@ -193,7 +193,7 @@ const Services = () => {
                         Nuestro enfoque metódico para garantizar una implementación exitosa
                     </p>
                 </div>
-                <div className="mx-auto max-w-4xl py-6">
+                <div className="mx-auto max-w-4xl mt-4">
                     {Implementation.map((value, id) => (
                         <div key={id} className="flex items-start space-x-4 rounded-lg p-4">
                             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-500 text-primary-foreground">

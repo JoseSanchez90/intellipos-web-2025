@@ -80,7 +80,7 @@ const About = () => {
                                 className="from-transparent via-green-500 to-transparent"
                             />
                         </Card>
-                        <Card className="relative overflow-hidden hover:shadow-lg bg-gray-100 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
+                        <Card className="relative h overflow-hidden hover:shadow-lg bg-gray-100 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
                             <CardContent className="md:p-6">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Visión</h3>
@@ -101,10 +101,11 @@ const About = () => {
                 </div>
             </section>
 
+            {/* Nuestros Valores */}
             <section className="h-screen mx-5 md:mx-20 flex flex-col justify-center items-center">
-                <div className="h-screen space-y-6">
+                <div className="h-screen space-y-6 md:space-y-2">
                     <div className="flex flex-col items-center justify-center text-center">
-                        <div className="space-y-4">
+                        <div className="space-y-2 md:space-y-4">
                             <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Nuestros <span className="text-green-500">Valores</span></h2>
                             <p className="text-muted-foreground text-center">Los principios que guían nuestro trabajo diario</p>
                         </div>
@@ -127,7 +128,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
-
+            
+            {/* Equipo */}
             <TeamCarousel />
         </>
      );

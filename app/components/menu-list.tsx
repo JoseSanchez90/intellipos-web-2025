@@ -25,6 +25,7 @@ export function MenuList() {
             "text-sm font-medium transition-colors relative group",
             pathname === href ? "text-green-600" : "text-foreground/60"
           )}
+          scroll={false}
         >
           {label}
           <span

@@ -30,17 +30,17 @@ const Footer = () => {
                 <h3 className="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
                 <ul className="space-y-2 text-sm">
                     <li>
-                    <Link href="/nosotros" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="/nosotros" scroll={false} className="text-muted-foreground hover:text-primary transition-colors">
                         Nosotros
                     </Link>
                     </li>
                     <li>
-                    <Link href="/servicio" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="/servicio" scroll={false} className="text-muted-foreground hover:text-primary transition-colors">
                         Servicio
                     </Link>
                     </li>
                     <li>
-                    <Link href="/productos" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="/productos" scroll={false} className="text-muted-foreground hover:text-primary transition-colors">
                         Productos
                     </Link>
                     </li>
@@ -52,12 +52,12 @@ const Footer = () => {
                 <h3 className="text-lg font-semibold mb-4">Recursos</h3>
                 <ul className="space-y-2 text-sm">
                     <li>
-                    <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="/blog" scroll={false} className="text-muted-foreground hover:text-primary transition-colors">
                         Blog
                     </Link>
                     </li>
                     <li>
-                    <Link href="contactanos" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="contactanos" scroll={false} className="text-muted-foreground hover:text-primary transition-colors">
                         Contáctanos
                     </Link>
                     </li>

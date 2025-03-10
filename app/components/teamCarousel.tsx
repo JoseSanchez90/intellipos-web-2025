@@ -102,7 +102,7 @@ const TeamCarousel = () => {
     return ( 
         <section className="w-full h-full flex flex-col justify-center items-center overflow-hidden gap-10 mt-48 mb-32 md:mt-0 md:mb-40">
           <div className="h-full space-y-6">
-                <div className="flex flex-col justify-center items-center gap-5">
+                <div className="flex flex-col justify-center items-center space-y-2 md:space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Nuestro <span className="text-green-500">Equipo</span></h2>
                   <p className="text-muted-foreground text-center">Profesionales dedicados a tu éxito</p>
                 </div>
