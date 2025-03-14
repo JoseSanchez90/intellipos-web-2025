@@ -86,10 +86,7 @@ const Products = () => {
                 <div className="absolute flex flex-col items-center justify-center">
                     <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl">
                         <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Hardware <span className="text-green-400 font-bold">Compatible</span></h1>
-                        <p className="mt-4 text-sm md:text-xl text-white font-semibold">Ofrecemos una amplia gama de dispositivos compatibles con los sistemas Aloha NCR, diseñados para
-                        optimizar la operativa de tu negocio y mejorar la experiencia de tus clientes.
-                        Todos nuestros equipos están certificados y cuentan con garantía, asegurando un rendimiento óptimo y
-                        una larga vida útil.</p>
+                        <p className="mt-4 text-sm md:text-xl text-white font-semibold">Ofrecemos equipos NCR con la última tecnología, reconocidos por su robustez y confiabilidad. Como la marca líder en Retail, Banca y Hospitalidad, contamos con una línea completa de soluciones para todas las necesidades, respaldadas por soporte de hardware a nivel nacional.</p>
                         <div className="mt-4">
                             <Link href="/contactanos">
                             <Button className="w-56 bg-white text-black hover:bg-gray-200 cursor-pointer">Ver Catálogo Completo <ArrowRight className="h-4 w-4" /></Button>
@@ -149,7 +146,7 @@ const Products = () => {
                     ],
                 },
                 ].map((product, index) => (
-              <Card key={index} className={`h-full relative hover:shadow-lg shadow-gray-300 dark:shadow-gray-600 ${product.highlighted ? "" : ""}`}>
+              <Card key={index} className={`h-full relative hover:border-black hover:shadow-lg shadow-gray-300 dark:hover:border-white dark:shadow-gray-600 ${product.highlighted ? "" : ""}`}>
                 {product.highlighted && (
                   <div className="absolute -top-3 left-0 right-0 mx-auto w-fit rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
                     Recomendado

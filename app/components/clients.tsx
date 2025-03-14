@@ -36,8 +36,8 @@ const reviews = [
       },
 ]
 
-const firstRow = reviews.slice(0, reviews.length / 2)
-const secondRow = reviews.slice(reviews.length / 2);
+const firstRow = reviews.slice(0, reviews.length / 1)
+// const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
     img,
@@ -67,16 +67,16 @@ const Clients = () => {
                 <p className="max-w-[900px] text-center">Empresas que confían en IntelliPOS para sus operaciones diarias</p>
             </div>
             <div className="relative flex w-full flex-col items-center justify-center overflow-hidden gap-5">
-                <Marquee pauseOnHover className="[--duration:30s]">
+                <Marquee pauseOnHover className="[--duration:50s]">
                     {firstRow.map((review) => (
                         <ReviewCard key={review.id} {...review} />
                     ))}
                 </Marquee>
-                <Marquee reverse pauseOnHover className="[--duration:30s]">
+                {/* <Marquee reverse pauseOnHover className="[--duration:30s]">
                     {secondRow.map((review) => (
                         <ReviewCard key={review.id} {...review} />
                     ))}
-                </Marquee>
+                </Marquee> */}
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
             </div>

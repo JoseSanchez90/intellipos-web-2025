@@ -5,7 +5,7 @@ import horizontalOne from "@/app/img/horizontal-1.jpg";
 import horizontalTwo from "@/app/img/horizontal-2.jpg";
 import vertical from "@/app/img/vertical.jpg";
 import dynamic from "next/dynamic";
-import { ArrowRight, BarChart, BookOpen, Clock, Headphones, HeartHandshake, Wrench } from "lucide-react";
+import { ArrowRight, BarChart, BookOpen, Check, Clock, Headphones, HeartHandshake, Wrench } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import soporte from "@/app/img/soporte.jpg"
@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Ripple } from "@/components/magicui/ripple";
 import { CarouselServices } from "@/app/components/carousel-services";
+import { m } from "framer-motion";
 
     const ServicesGeneral = [
         {
@@ -175,10 +176,42 @@ const Services = () => {
                     <div className="absolute inset-0 bg-black/60"></div>
             
                 <div className="absolute flex flex-col items-center justify-center">
-                    <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl space-y-4">
-                        <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Soporte Técnico <span className="text-green-400 font-bold">Especializado</span></h1>
-                        <p className="mt-4 text-sm md:text-xl text-white font-semibold max-w-xl">En IntelliPOS entendemos la importancia de contar con un sistema de punto de venta siempre operativo. Por eso, ofrecemos servicios de soporte técnico especializado disponibles 24/7.</p>
-                        <Button className="w-48 bg-white text-black hover:bg-gray-200 cursor-pointer">Contactar Soporte<ArrowRight className="h-4 w-4"/></Button>
+                    <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl space-y-4 flex flex-col justify-center items-center">
+                        <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">¿Como mejoramos la experiencia <span className="text-green-400 font-bold">de las Tiendas?</span></h1>
+                        <div className="max-w-2xl">
+                            {[
+                                {
+                                    id: 1,
+                                    description: "Sistema con muy alta disponibilidad"
+                                },
+                                {
+                                    id: 2,
+                                    description: "Soporte en línea a todas las tiendas"
+                                },
+                                {
+                                    id: 3,
+                                    description: "Personal de Soporte certificado y con amplia experiencia"   
+                                },
+                                {
+                                    id: 4,
+                                    description: "Soporte y Mantenimiento de Equipos a Nivel Nacional"   
+                                },
+                                {
+                                    id: 5,
+                                    description: "Contratos de mantenimiento con estándares internacionales"   
+                                },
+                                {
+                                    id: 6,
+                                    description: "Reportes mensuales de atenciones y SLA"   
+                                },
+                            ].map((Coments, id) => (
+                            <div key={id} className="flex flex-row justify-start items-end gap-2">
+                               <Check className="text-green-500" /> <p className="mt-2 text-sm md:text-xl text-white font-semibold max-w-xl">{Coments.description}</p>
+                            </div> 
+                            ))
+                            }
+                        </div>
+                        <Button className="w-48 mt-4 bg-white text-black hover:bg-gray-200 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/></Button>
                     </div>
                 </div>
             </div>

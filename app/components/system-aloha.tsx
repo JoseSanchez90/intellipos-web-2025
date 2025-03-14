@@ -31,9 +31,9 @@ const SystemAloha = () => {
 
             <div className="absolute inset-0 bg-black/70"></div>
 
-            <div className="absolute max-w-3xl flex flex-col justify-center items-center space-y-4 px-5">
+            <div className="absolute max-w-5xl flex flex-col justify-center items-center space-y-4 md:space-y-6 px-5">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Sistema <span className="text-green-500">Aloha</span> NCR</h2> 
-                <p className="text-white md:text-xl text-center">Ofrecemos soluciones integrales para la gestión de tu negocio, desde el punto de venta hasta el análisis de datos</p>
+                <p className="text-white md:text-xl text-center">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
                 <div>
                 <ul className="grid gap-2 text-left max-w-md mx-auto text-lg text-white">
                     {[

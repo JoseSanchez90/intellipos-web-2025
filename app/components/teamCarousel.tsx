@@ -5,63 +5,63 @@ const reviews = [
     {
         id: 1,
         name: "Ing. Juan Carlos",
-        title: "@ppp",
+        title: "#Gerencia",
         body: "Gerente General IntelliPOS",
         img: "/images/user.png"
     },
     {
         id: 2,
         name: "Ing. Renan Urteaga",
-        title: "@ccc",
+        title: "#Gerencia",
         body: "Gerente IntelliPOS",
         img: "/images/user.png"
     },
       {
         id: 3,
         name: "Alex Paredes",
-        title: "@Ing. de Sistemas",
+        title: "#Area de Soporte",
         body: "Analista de Sistemas",
         img: "/images/AlexParedes.png",
       },
       {
         id: 4,
         name: "Daniel Quispe",
-        title: "@Ing. de Sistemas",
+        title: "#Area de Soporte",
         body: "Analista de Sistemas",
         img: "/images/user.png",
       },
       {
         id: 5,
         name: "Jose Castro",
-        title: "@Ing. de Sistemas",
+        title: "#Area de Soporte",
         body: "Analista de Sistemas",
         img: "/images/user.png",
       },
       {
         id: 6,
         name: "Jose Sanchez",
-        title: "@Tecnico Informatica",
+        title: "#Area de Soporte",
         body: "Analista de Sistemas",
         img: "/images/user.png",
       },
       {
         id: 7,
         name: "Jose Carrasco",
-        title: "@Ing. de Sistemas",
+        title: "#Area de Desarrollo",
         body: "Programador .NET",
         img: "/images/user.png",
       },
       {
         id: 8,
         name: "Henrry Ordinola",
-        title: "@james",
+        title: "#Area de Soporte",
         body: "Coordinador TI",
         img: "/images/user.png",
       },
 ]
 
-const firstRow = reviews.slice(0, reviews.length / 2)
-const secondRow = reviews.slice(reviews.length / 2);
+const firstRow = reviews.slice(0, reviews.length / 1)
+// const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
     img,
@@ -77,7 +77,7 @@ const ReviewCard = ({
     return (
         <figure
       className={cn(
-        "relative h-32 w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-40 w-72 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-100",
         // dark styles
@@ -85,15 +85,15 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-4">
-        <img className="rounded-full" width="64" height="64" alt="" src={img} />
+        <img className="rounded-full" width="80" height="80" alt="" src={img} />
         <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
+          <figcaption className="text-sm lg:text-lg font-medium dark:text-white">
             {name}
           </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{title}</p>
+          <p className="text-xs lg:text-sm text-green-600 dark:text-white/40">{title}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-sm lg:text-normal font-medium text-gray-500">{body}</blockquote>
     </figure>
     )
 }
@@ -107,16 +107,16 @@ const TeamCarousel = () => {
                   <p className="text-muted-foreground text-center">Profesionales dedicados a tu éxito</p>
                 </div>
                 <div className="relative flex max-w-5xl 2xl:max-w-7xl flex-col items-center justify-center overflow-hidden">
-                  <Marquee pauseOnHover className="[--duration:30s]">
+                  <Marquee pauseOnHover className="[--duration:50s]">
                       {firstRow.map((review) => (
                       <ReviewCard key={review.id} {...review} />
                       ))}
                   </Marquee>
-                  <Marquee reverse pauseOnHover className="[--duration:30s]">
+                  {/* <Marquee reverse pauseOnHover className="[--duration:30s]">
                       {secondRow.map((review) => (
                       <ReviewCard key={review.id} {...review} />
                       ))}
-                  </Marquee>
+                  </Marquee> */}
                     <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
                     <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
                 </div>
