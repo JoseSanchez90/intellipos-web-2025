@@ -11,7 +11,7 @@ const Products = () => {
         <>
         {/* Dispositivos y Accesorios */}
         <section className="w-full h-screen flex flex-col justify-center items-center">
-            <div>
+            <div className="w-full flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center items-center">
                     <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Dispositivos y <span className="text-green-400 font-bold">accesorios</span></h2>
                     <p className="mt-4 text-muted-foreground">Complementa tu sistema con nuestros dispositivos de alta calidad</p>
@@ -72,7 +72,7 @@ const Products = () => {
 
         {/* Hardware Compatible */}
         <section className="w-full h-screen flex justify-center items-center">
-            <div className="relative w-full md:h-[500px] 2xl:h-[550px] mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
+            <div className="relative w-full md:h-[400px] 2xl:h-[500px] mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
                 {/* Imagen de fondo con desenfoque */}
                 <div className="hidden sm:flex absolute inset-0">
                     <Image src={bgproducts} alt="nosotros background" fill className="object-cover bg-cover" />

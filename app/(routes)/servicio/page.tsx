@@ -13,7 +13,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Ripple } from "@/components/magicui/ripple";
 import { CarouselServices } from "@/app/components/carousel-services";
-import { m } from "framer-motion";
 
     const ServicesGeneral = [
         {
@@ -93,8 +92,8 @@ const Services = () => {
 
     return (
         <>
-        <section className="h-full flex justify-center items-center">
-            <div className="h-[550px] md:h-[500px] 2xl:h-[600px] mx-5 md:mx-20 flex justify-center items-center">
+        <section className="w-full h-screen flex justify-center items-center">
+            <div className="w-full h-[550px] md:h-[400px] 2xl:h-[500px] mx-5 md:mx-20 flex justify-center items-center">
                 {/* Grid principal con Bento Layout */}
                 <div className="grid md:grid-cols-3 grid-rows-6 gap-4 w-full h-full relative">
                     {/* Imagen vertical grande (col-izquierda) */}
@@ -167,7 +166,7 @@ const Services = () => {
         </section>
 
         <section className="h-full flex justify-center items-center px-5 md:mx-20 lg:mt-16">
-            <div className="relative w-full h-[580px] md:h-[500px] 2xl:h-[580px]  rounded-lg overflow-auto flex justify-center items-center border">
+            <div className="relative w-full h-[580px] md:h-[400px] 2xl:h-[500px]  rounded-lg overflow-auto flex justify-center items-center border">
                 {/* Imagen de fondo con desenfoque */}
                 <div className="absolute inset-0">
                     <Image src={soporte} alt="nosotros background" fill className="object-cover bg-cover" />
@@ -176,7 +175,7 @@ const Services = () => {
                     <div className="absolute inset-0 bg-black/60"></div>
             
                 <div className="absolute flex flex-col items-center justify-center">
-                    <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl space-y-4 flex flex-col justify-center items-center">
+                    <div className="p-5 bg-opacity-50 rounded-l text-center max-w-5xl space-y-2 flex flex-col justify-center items-center">
                         <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">¿Como mejoramos la experiencia <span className="text-green-400 font-bold">de las Tiendas?</span></h1>
                         <div className="max-w-2xl">
                             {[
@@ -206,7 +205,8 @@ const Services = () => {
                                 },
                             ].map((Coments, id) => (
                             <div key={id} className="flex flex-row justify-start items-end gap-2">
-                               <Check className="text-green-500" /> <p className="mt-2 text-sm md:text-xl text-white font-semibold max-w-xl">{Coments.description}</p>
+                               <Check className="text-green-500" />
+                               <p className="mt-2 text-sm md:text-lg text-white font-semibold max-w-xl">{Coments.description}</p>
                             </div> 
                             ))
                             }

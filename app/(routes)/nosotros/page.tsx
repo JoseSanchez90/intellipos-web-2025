@@ -32,8 +32,8 @@ const Valores = [
 const About = () => {
     return ( 
         <>
-            <section className="w-full h-screen">
-                <div className="relative h-[580px] md:h-[500px] 2xl:h-[580px] mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
+            <section className="w-full h-screen flex justify-center items-center">
+                <div className="relative w-full h-[580px] md:h-[400px] 2xl:h-[500px] mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
                     {/* Imagen de fondo con desenfoque */}
                     <div className="hidden sm:flex absolute inset-0">
                         <Image src={fondo} alt="nosotros background" fill className="object-cover bg-cover" />
