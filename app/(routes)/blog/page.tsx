@@ -63,7 +63,7 @@ const Blog = () => {
     ]
 
     return ( 
-        <section className="w-full h-full flex flex-col justify-center items-center px-20 space-y-4 pb-10">
+        <section className="w-full h-full flex flex-col justify-center items-center px-20 space-y-4 pb-10 mt-16">
             <div className="pt-6">
                 <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Blog de <span className="text-green-400">Intelli</span>POS</h2>
                 <p className="mt-2 text-muted-foreground text-center">Noticias, consejos y tendencias sobre sistemas Aloha NCR</p>
