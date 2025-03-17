@@ -33,7 +33,7 @@ const Navbar = () => {
 
     return ( 
         <nav className="w-full flex justify-center items-center">
-            <section className={`md:fixed md:top-0 md:z-50 md:backdrop-blur-sm bg-white/80 dark:bg-black/50 flex justify-between items-center py-4 px-6 md:px-28 2xl:px-32 transition-all duration-500 ${isScrolled ? "shadow-lg dark:shadow-white rounded-full bg-slate-100 px-20 text-sm mt-4 mx-2 w-[85%] transform" : "text-base w-full"}`}>
+            <section className={`md:fixed md:top-0 md:z-50 md:backdrop-blur-sm bg-white/80 dark:bg-black/0 flex justify-between items-center py-4 px-6 md:px-28 2xl:px-32 transition-all duration-500 ${isScrolled ? "shadow-lg dark:shadow-gray-600 rounded-full bg-slate-100 dark:bg-black/80 px-20 text-sm mt-4 mx-2 w-[85%] transform" : "text-base w-full"}`}>
                 <div className="flex items-center space-x-0.5">
                     <button onClick={() => router.push("/")} className="flex cursor-pointer">
                         <h1 className="text-xl sm:text-3xl font-extrabold text-green-600 cursor-pointer letter-logo">Intelli</h1>
