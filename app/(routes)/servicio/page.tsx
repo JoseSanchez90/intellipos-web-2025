@@ -93,7 +93,7 @@ const Services = () => {
     return (
         <>
         <section className="w-full h-screen flex justify-center items-center">
-            <div className="w-full h-[550px] md:h-[400px] 2xl:h-[500px] mx-5 md:mx-20 flex justify-center items-center">
+            <div className="w-full h-[550px] md:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 md:mx-20 flex justify-center items-center">
                 {/* Grid principal con Bento Layout */}
                 <div className="grid md:grid-cols-3 grid-rows-6 gap-4 w-full h-full relative">
                     {/* Imagen vertical grande (col-izquierda) */}
@@ -110,7 +110,7 @@ const Services = () => {
                             <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">
                                 Nuestros <span className="text-green-400">Servicios</span>
                             </h1>
-                            <p className="flex md:hidden mt-4 text-sm md:text-xl text-white font-semibold">
+                            <p className="flex md:hidden mt-4 text-md md:text-xl text-white font-semibold">
                             Ofrecemos las mejores soluciones integrales para la gestión de tu negocio con Aloha NCR.
                             </p>
                         </div>
@@ -166,7 +166,7 @@ const Services = () => {
         </section>
 
         <section className="h-full flex justify-center items-center px-5 md:mx-20 lg:mt-16">
-            <div className="relative w-full h-[580px] md:h-[400px] 2xl:h-[500px]  rounded-lg overflow-auto flex justify-center items-center border">
+            <div className="relative w-full h-[550px] md:h-[400px] 2xl:h-[500px]  rounded-lg overflow-auto flex justify-center items-center border">
                 {/* Imagen de fondo con desenfoque */}
                 <div className="absolute inset-0">
                     <Image src={soporte} alt="nosotros background" fill className="object-cover bg-cover" />
@@ -175,7 +175,7 @@ const Services = () => {
                     <div className="absolute inset-0 bg-black/60"></div>
             
                 <div className="absolute flex flex-col items-center justify-center">
-                    <div className="p-5 bg-opacity-50 rounded-l text-center max-w-5xl space-y-2 flex flex-col justify-center items-center">
+                    <div className="p-5 bg-opacity-50 rounded-l text-center max-w-5xl space-y-2 md:space-y-6 flex flex-col justify-center items-center">
                         <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">¿Como mejoramos la experiencia <span className="text-green-400 font-bold">de las Tiendas?</span></h1>
                         <div className="max-w-2xl">
                             {[
@@ -206,12 +206,13 @@ const Services = () => {
                             ].map((Coments, id) => (
                             <div key={id} className="flex flex-row justify-start items-end gap-2">
                                <Check className="text-green-500" />
-                               <p className="mt-2 text-sm md:text-lg text-white font-semibold max-w-xl">{Coments.description}</p>
+                               <p className="mt-2 text-sm md:text-lg text-white font-semibold max-w-xl text-start">{Coments.description}</p>
                             </div> 
                             ))
                             }
+                            <Button className="w-full mt-8 md:mt-4 2xl:mt-8 bg-white text-black hover:bg-gray-200 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/>
+                            </Button>
                         </div>
-                        <Button className="w-48 mt-4 bg-white text-black hover:bg-gray-200 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/></Button>
                     </div>
                 </div>
             </div>

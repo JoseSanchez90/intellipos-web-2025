@@ -4,7 +4,7 @@ import { ArrowRight, ShoppingCart } from "lucide-react";
 const Banner = () => {
     return ( 
       <section className="w-full h-screen flex justify-center items-center">
-        <div className="relative w-full h-[580px] md:h-[400px] 2xl:h-[500px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900">
+        <div className="relative w-full h-[550px] md:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900">
           {/* Imagen de fondo con desenfoque */}
           <div className="hidden sm:flex absolute inset-0">
             <video
