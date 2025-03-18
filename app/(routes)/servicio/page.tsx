@@ -145,7 +145,7 @@ const Services = () => {
                 </div>
                 <div className="hidden mx-auto md:grid max-w-5xl gap-2 md:gap-4 md:py-10 md:grid-cols-3 py-6">
                     {ServicesGeneral.map((value, id) => (
-                        <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:bg-black dark:shadow-gray-600 transition-all duration-150">
+                        <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                             <CardContent className="flex flex-col items-center text-center space-y-2">
                                 <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
                                 <h3 className="text-lg md:text-xl font-bold">{value.title}</h3>

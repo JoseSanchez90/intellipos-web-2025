@@ -62,7 +62,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="max-w-5xl grid lg:grid-cols-2 gap-6 md:py-12 mx-auto">
-                        <Card className="relative overflow-hidden hover:shadow-lg bg-gray-100 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
+                        <Card className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                             <CardContent className="md:p-6">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Misión</h3>
@@ -80,7 +80,7 @@ const About = () => {
                                 className="from-transparent via-green-500 to-transparent"
                             />
                         </Card>
-                        <Card className="relative h overflow-hidden hover:shadow-lg bg-gray-100 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
+                        <Card className="relative h overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                             <CardContent className="md:p-6">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Visión</h3>
@@ -112,7 +112,7 @@ const About = () => {
                     </div>
                     <div className="mx-auto w-72 md:w-full grid md:max-w-5xl gap-4 md:gap-6 md:py-12 md:grid-cols-3">
                         {Valores.map((value, id) => (
-                            <Card key={id} className="relative overflow-hidden hover:shadow-lg bg-gray-100 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
+                            <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                             <CardContent className="flex flex-col items-center text-center space-y-2">
                             <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
                             <h3 className="text-lg md:text-xl font-bold">{value.title}</h3>

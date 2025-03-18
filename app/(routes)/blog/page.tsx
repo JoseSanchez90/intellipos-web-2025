@@ -1,9 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Calendar, Fullscreen } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 import Image from "next/image";
 
 const Blog = () => {
+
 
     const Noticias = [
         {
@@ -13,7 +15,7 @@ const Blog = () => {
             title: "5 Ventajas de Implementar un Sistema Aloha NCR en tu Restaurante",
             description: "Descubre cómo un sistema Aloha NCR puede transformar la operativa de tu restaurante y mejorar la experiencia de tus clientes.",
             date: "15 de Junio, 2023",
-            read: "Leer más"
+            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
         },
         {
             id: 2,
@@ -22,7 +24,7 @@ const Blog = () => {
             title: "Cómo Optimizar la Gestión de Inventario con Aloha NCR",
             description: "Aprende a utilizar las funcionalidades de gestión de inventario de Aloha NCR para reducir costos y evitar pérdidas.",
             date: "28 de Mayo, 2023",
-            read: "Leer más"
+            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
         },
         {
             id: 3,
@@ -31,7 +33,7 @@ const Blog = () => {
             title: "Tendencias en Sistemas de Punto de Venta para 2023",
             description: "Análisis de las principales tendencias en sistemas POS que están transformando el sector retail y hostelería.",
             date: "10 de Abril, 2023",
-            read: "Leer más"
+            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
         },
         {
             id: 4,
@@ -40,7 +42,7 @@ const Blog = () => {
             title: "Guía Completa: Migración a Aloha NCR desde Otros Sistemas",
             description: "Todo lo que necesitas saber para migrar exitosamente desde tu sistema actual a Aloha NCR sin interrupciones.",
             date: "5 de Marzo, 2023",
-            read: "Leer más"
+            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
         },
         {
             id: 5,
@@ -49,7 +51,7 @@ const Blog = () => {
             title: "Seguridad en Sistemas de Punto de Venta: Mejores Prácticas",
             description: "Recomendaciones para proteger tu sistema POS y los datos de tus clientes frente a amenazas cibernéticas.",
             date: "18 de Febrero, 2023",
-            read: "Leer más"
+            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
         },
         {
             id: 6,
@@ -58,7 +60,7 @@ const Blog = () => {
             title: "Cómo Aumentar las Ventas con Programas de Fidelización en Aloha NCR",
             description: "Estrategias efectivas para implementar programas de fidelización utilizando las funcionalidades de Aloha NCR.",
             date: "3 de Enero, 2023",
-            read: "Leer más"
+            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
         },
     ]
 
@@ -72,7 +74,7 @@ const Blog = () => {
                 <div className="h-full col-span-5 row-span-6 p-4">
                     <div className=" w-full h-full p-4 grid grid-cols-3 gap-6">
                         {Noticias.map((value, id) => (
-                            <Card key={id} className="h-full border border-gray-200">
+                            <Card key={id} className="h-full border border-gray-200 dark:border-gray-700" >
                                 <CardContent className="h-full flex flex-col justify-between space-y-4">
                                     <div className="">
                                         <div>
@@ -92,8 +94,8 @@ const Blog = () => {
                                             <span>{value.date}</span>
                                         </div>
                                     </div>
-                                    <div className="">
-                                        <Button>{value.read} <ArrowRight/></Button>
+                                    <div >
+                                        <Button className="cursor-pointer" >Leer más <ArrowRight/></Button>
                                     </div>
                                 </CardContent>
                             </Card>
