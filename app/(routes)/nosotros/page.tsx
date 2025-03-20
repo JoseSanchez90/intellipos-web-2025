@@ -107,7 +107,7 @@ const About = () => {
                     <div className="flex flex-col items-center justify-center text-center">
                         <div className="space-y-2 md:space-y-4">
                             <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Nuestros <span className="text-green-500">Valores</span></h2>
-                            <p className="text-muted-foreground text-center">Los principios que guían nuestro trabajo diario</p>
+                            <p className="mt-4 text-muted-foreground md:text-lg">Los principios que guían nuestro trabajo diario</p>
                         </div>
                     </div>
                     <div className="mx-auto w-72 md:w-full grid md:max-w-5xl gap-4 md:gap-6 md:py-12 md:grid-cols-3">

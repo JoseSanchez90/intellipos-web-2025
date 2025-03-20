@@ -1,8 +1,11 @@
 
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Calendar } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Blog = () => {
 
@@ -63,6 +66,8 @@ const Blog = () => {
             link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
         },
     ]
+    
+    const router = useRouter()
 
     return ( 
         <section className="w-full h-full flex flex-col justify-center items-center px-20 space-y-4 pb-10 mt-16">
@@ -94,8 +99,10 @@ const Blog = () => {
                                             <span>{value.date}</span>
                                         </div>
                                     </div>
-                                    <div >
-                                        <Button className="cursor-pointer" >Leer más <ArrowRight/></Button>
+                                    <div>
+                                        <Button asChild>
+                                            <a href={value.link} target="_blank" rel="noopener noreferrer">Leer más <ArrowRight /></a>
+                                        </Button>
                                     </div>
                                 </CardContent>
                             </Card>

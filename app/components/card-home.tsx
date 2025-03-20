@@ -13,7 +13,7 @@ const CardHome = () => {
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                     Ventajas de <span className="text-green-500">Intelli</span>POS
                     </h2>
-                    <p className="max-w-[900px] text-sm md:text-xl">
+                    <p className="mt-4 text-muted-foreground md:text-lg">
                     Descubre por qué los mejores negocios confían en nuestras soluciones Aloha NCR
                     </p>
                 </div>

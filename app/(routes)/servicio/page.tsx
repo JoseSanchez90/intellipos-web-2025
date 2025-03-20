@@ -140,7 +140,7 @@ const Services = () => {
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Servicios <span className="text-green-500 font-bold">Principales</span></h1>
-                        <p className="text-muted-foreground text-center">Soluciones completas para optimizar tu negocio.</p>
+                        <p className="mt-4 text-muted-foreground md:text-lg">Soluciones completas para optimizar tu negocio.</p>
                     </div>
                 </div>
                 <div className="hidden mx-auto md:grid max-w-5xl gap-2 md:gap-4 md:py-10 md:grid-cols-3 py-6">
@@ -204,9 +204,9 @@ const Services = () => {
                                     description: "Reportes mensuales de atenciones y SLA"   
                                 },
                             ].map((Coments, id) => (
-                            <div key={id} className="flex flex-row justify-start items-end gap-2">
+                            <div key={id} className="flex flex-row justify-start items-start md:items-end gap-2 py-1">
                                <Check className="text-green-500" />
-                               <p className="mt-2 text-sm md:text-lg text-white font-semibold max-w-xl text-start">{Coments.description}</p>
+                               <p className="text-sm md:text-lg text-white font-semibold w-full md:max-w-xl text-start">{Coments.description}</p>
                             </div> 
                             ))
                             }
@@ -223,14 +223,14 @@ const Services = () => {
             <div className="w-full h-screen flex flex-col items-center justify-center md:space-y-4 text-center">
                 <div className="space-y-2">
                     <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Proceso de <span className="text-green-400 font-bold">Implementación</span></h1>
-                    <p className="mt-4 text-muted-foreground text-center">
+                    <p className="mt-4 text-muted-foreground md:text-lg">
                         Nuestro enfoque metódico para garantizar una implementación exitosa
                     </p>
                 </div>
                 <div className="mx-auto max-w-4xl mt-4">
                     {Implementation.map((value, id) => (
                         <div key={id} className="flex items-start space-x-4 rounded-lg p-4">
-                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-500 text-primary-foreground">
+                            <div className="flex h-8 w-8 md:h-10 md:w-10 shrink-0 items-center justify-center rounded-full bg-green-500 text-primary-foreground">
                             {value.step}
                             </div>
                             <div className="flex flex-col items-start">
