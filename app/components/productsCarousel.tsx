@@ -45,9 +45,9 @@ const ReviewCard = ({
 
 const ProductsCarousel = () => {
     return ( 
-        <section className="w-full max-w-5xl h-full flex flex-col justify-center items-center overflow-hidden">
+        <section className="md:w-full max-w-sm md:max-w-5xl h-full flex flex-col justify-center items-center overflow-hidden">
             <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-                <Marquee className="[--duration:50s]">
+                <Marquee className="[--duration:40s]">
                     {firstRow.map((review) => (
                         <ReviewCard key={review.id} {...review} />
                     ))}

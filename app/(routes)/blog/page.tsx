@@ -1,6 +1,7 @@
 
 "use client"
 
+import { CarouselBlog } from "@/app/components/carousel-blog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Calendar } from "lucide-react";
@@ -15,91 +16,91 @@ const Blog = () => {
             id: 1,
             img: "/images/1.jpg",
             category: "Restaurantes",
-            title: "5 Ventajas de Implementar un Sistema Aloha NCR en tu Restaurante",
-            description: "Descubre cómo un sistema Aloha NCR puede transformar la operativa de tu restaurante y mejorar la experiencia de tus clientes.",
-            date: "15 de Junio, 2023",
-            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
+            title: "Los 10 principales beneficios de usar el software POS para restaurantes",
+            description: "Descubre cómo un sistema de punto de venta moderno puede mejorar la eficiencia.",
+            date: "15 de Marzo, 2024",
+            link: "https://upkeep.com/es/learning/top-10-benefits-of-using-restaurant-pos-software/"
         },
         {
             id: 2,
             img: "/images/2.jpg",
             category: "Inventario",
-            title: "Cómo Optimizar la Gestión de Inventario con Aloha NCR",
-            description: "Aprende a utilizar las funcionalidades de gestión de inventario de Aloha NCR para reducir costos y evitar pérdidas.",
-            date: "28 de Mayo, 2023",
-            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
+            title: "¿Por qué implementar un sistema POS en tu restaurante?",
+            description: "Guía completa sobre los sistemas de punto de venta: qué son, cómo funcionan y por qué son esenciales.",
+            date: "28 de Febrero, 2024",
+            link: "https://www.covermanager.com/es/como-optimizar-la-gestion-de-inventarios-en-restaurantes/"
         },
         {
             id: 3,
             img: "/images/3.jpg",
             category: "Tendencias",
-            title: "Tendencias en Sistemas de Punto de Venta para 2023",
-            description: "Análisis de las principales tendencias en sistemas POS que están transformando el sector retail y hostelería.",
-            date: "10 de Abril, 2023",
-            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
+            title: "Cómo elegir el mejor sistema POS para tu negocio",
+            description: "La elección de un sistema de puntos de venta (POS) es sin duda una de las decisiones más importantes para tu empresa en materia de pagos.",
+            date: "10 de Febrero, 2024",
+            link: "https://stripe.com/es/resources/more/how-to-choose-a-pos-system"
         },
         {
             id: 4,
-            img: "/images/4.jpg",
+            img: "/images/noticias2.jpg",
             category: "Implementacion",
-            title: "Guía Completa: Migración a Aloha NCR desde Otros Sistemas",
-            description: "Todo lo que necesitas saber para migrar exitosamente desde tu sistema actual a Aloha NCR sin interrupciones.",
+            title: "El Futuro de los Sistemas POS de Retail",
+            description: "¿Alguna vez te has preguntado sobre la velocidad con la que evoluciona la tecnología minorista, especialmente en el ámbito de los sistemas de Punto de Venta (POS)?.",
             date: "5 de Marzo, 2023",
-            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
+            link: "https://www.hulkapps.com/es/blogs/ecommerce-hub/el-futuro-de-los-sistemas-pos-de-retail-principales-tendencias-que-configuran-la-industria"
         },
         {
             id: 5,
-            img: "/images/2.jpg",
+            img: "/images/noticias1.jpg",
             category: "Seguridad",
-            title: "Seguridad en Sistemas de Punto de Venta: Mejores Prácticas",
-            description: "Recomendaciones para proteger tu sistema POS y los datos de tus clientes frente a amenazas cibernéticas.",
+            title: "Ncr Aloha: Todo Lo Que Necesitas Saber 2024",
+            description: "NCR Aloha es una destacada solución tecnológica para restaurantes, compatible con Deliverect. En esta guía introductoria NCR Aloha 101, exploraremos las funciones claves, además de compartir consejos valiosos para una implementación eficaz.",
             date: "18 de Febrero, 2023",
-            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
+            link: "https://www.deliverect.com/es/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
         },
         {
             id: 6,
-            img: "/images/2.jpg",
+            img: "/images/NCR-Voyix.png",
             category: "Marketing",
-            title: "Cómo Aumentar las Ventas con Programas de Fidelización en Aloha NCR",
-            description: "Estrategias efectivas para implementar programas de fidelización utilizando las funcionalidades de Aloha NCR.",
+            title: "Aumenta tus ventas usando sistemas POS",
+            description: "Los sistemas de punto de venta permiten transacciones comerciales entre el cliente y la empresa. El sistema POS es una red computarizada que muestra exactamente qué productos se han vendido diariamente o mensualmente, cuánto dinero has ganado con las ventas y cuántos productos quedan en tu bodega.",
             date: "3 de Enero, 2023",
-            link: "https://www.deliverect.com/es-co/blog/sistemas-tpv/ncr-aloha-todo-lo-que-necesitas-saber"
+            link: "https://datascope.io/es/blog/aumenta-tus-ventas-usando-sistemas-pos/"
         },
     ]
     
     const router = useRouter()
 
     return ( 
-        <section className="w-full h-full flex flex-col justify-center items-center px-20 space-y-4 pb-10 mt-16">
-            <div className="pt-6">
+        <section className="w-full h-full flex flex-col justify-center items-center px-2 md:px-20 space-y-4 pb-10 mt-16">
+            <div className="pt-6 text-center">
                 <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Blog de <span className="text-green-400">Intelli</span>POS</h2>
                 <p className="mt-2 text-muted-foreground text-center">Noticias, consejos y tendencias sobre sistemas Aloha NCR</p>
             </div>
-            <div className="w-full h-full grid grid-cols-6 grid-rows-6">
-                <div className="h-full col-span-5 row-span-6 p-4">
-                    <div className=" w-full h-full p-4 grid grid-cols-3 gap-6">
+            <div className="w-full h-full">
+                <div className="h-full p-4">
+                    <div className="hidden w-full h-full p-4 md:grid grid-cols-3 gap-6">
                         {Noticias.map((value, id) => (
-                            <Card key={id} className="h-full border border-gray-200 dark:border-gray-700" >
-                                <CardContent className="h-full flex flex-col justify-between space-y-4">
-                                    <div className="">
+                            <Card key={id} className="h-full border border-gray-200 dark:border-gray-700 transition-all duration-200 hover:shadow-lg hover:shadow-gray-400">
+                                <CardContent className="h-full flex flex-col justify-between space-y-2">
+                                    <div className="space-y-3">
                                         <div>
                                             <Image src={value.img} alt="image" width={400} height={100} className="object-cover rounded-lg" />
                                         </div>
-                                        <div className="pb-2 pt-8">
+                                        <div>
                                             <span className="rounded-full bg-green-100 text-green-600 py-0.5 px-2 text-sm font-semibold">{value.category}</span>
                                         </div>
-                                        <div className="py-2">
+                                        <div>
                                             <p className="text-xl font-bold leading-tight">{value.title}</p>
                                         </div>
-                                        <div className="py-2">
+                                        <div>
                                             <p className="text-muted-foreground line-clamp-3">{value.description}</p>
                                         </div>
-                                        <div className="flex justify-start items-center space-x-2 py-2">
+                                        <div className="flex justify-start items-center space-x-2">
                                             <Calendar className="h-4 w-4" />
                                             <span>{value.date}</span>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="mt-2">
                                         <Button asChild>
                                             <a href={value.link} target="_blank" rel="noopener noreferrer">Leer más <ArrowRight /></a>
                                         </Button>
@@ -108,14 +109,9 @@ const Blog = () => {
                             </Card>
                         ))}
                     </div>
-                </div>
-                <div className="row-span-6 col-start-6 my-8 space-y-8">
-                    <div className="flex flex-col border border-gray-200 p-4 rounded-lg">
-                        <div>1</div>
+                    <div className="flex md:hidden">
+                        <CarouselBlog />
                     </div>
-                    <div className="flex flex-col border border-gray-200 p-4 rounded-lg">
-                        <div>2</div>
-                    </div>  
                 </div>
             </div>
         </section>

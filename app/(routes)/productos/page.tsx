@@ -3,6 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import bgproducts from "@/app/img/productos.jpg"
+import bghardware from "@/app/img/bg-hardware.jpg"
 import { Ripple } from "@/components/magicui/ripple";
 import ProductsCarousel from "@/app/components/productsCarousel";
 import { FcSmartphoneTablet } from "react-icons/fc";
@@ -11,8 +12,8 @@ const Products = () => {
     return ( 
         <>
         {/* Dispositivos y Accesorios */}
-        <section className="w-full h-screen flex flex-col justify-center items-center">
-            <div className="w-full flex flex-col justify-center items-center max-w-5xl gap-20">
+        <section className="w-full h-screen flex flex-col justify-center items-center px-2">
+            <div className="w-full flex flex-col justify-center items-center max-w-5xl gap-10 text-center">
                 <div className="flex flex-col justify-center items-center">
                     <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Hardware Certificado para <span className="text-green-400 font-bold">Aloha NCR</span></h2>
                     <p className="mt-4 text-muted-foreground text-center">Trabajamos con una variedad de marcas reconocidas y certificadas para garantizar la compatibilidad total con el sistema Aloha NCR. Desde terminales táctiles hasta impresoras térmicas y lectores de códigos, te ofrecemos soluciones confiables y eficientes para tu negocio.</p>
@@ -24,15 +25,15 @@ const Products = () => {
         </section>
 
         {/* Hardware Compatible */}
-        <section className="w-full h-screen flex justify-center items-center">
-            <div className="relative w-full md:h-[400px] 2xl:h-[500px] mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
+        <section className="w-full h-full md:h-screen flex justify-center items-center">
+            <div className="relative w-full h-[550px] md:h-[400px] 2xl:h-[500px] mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
                 {/* Imagen de fondo con desenfoque */}
                 <div className="hidden sm:flex absolute inset-0">
                     <Image src={bgproducts} alt="nosotros background" fill className="object-cover bg-cover" />
                 </div>
-                {/* <div className="sm:hidden flex absolute inset-0">
-                    <Image src={fondo2} alt="nosotros background" fill className="object-cover bg-cover" />
-                </div> */}
+                <div className="sm:hidden flex absolute inset-0">
+                    <Image src={bghardware} alt="nosotros background" fill className="object-cover bg-cover" />
+                </div>
 
                 <div className="absolute inset-0 bg-black/60"></div>
             
@@ -51,34 +52,37 @@ const Products = () => {
         </section>
         
         {/* Obtén un Presupuesto a la Medida */}
-        <section className="w-full h-screen flex flex-col justify-center items-center">
-            <div className="w-full h-full flex flex-col justify-center items-center space-y-8">
-                <div className="space-y-4 flex flex-col justify-center items-center">
-                    <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Obtén un Presupuesto <span className="text-green-400 font-bold">a la Medida</span></h1>
-                    <div>
-                        <p className="text-muted-foreground text-center">
-                        Cada negocio es único, y su sistema de punto de venta también, dinos lo que necesitas y te ofreceremos la mejor solución
-                        </p>
+        <section className="w-full h-screen flex justify-center items-center">
+            <div className="w-full h-[550px] md:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center">
+                <div className="space-y-8">
+                    <div className="space-y-4 flex flex-col justify-center items-center text-center">
+                        <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Obtén un Presupuesto <span className="text-green-400 font-bold">a la Medida</span></h1>
+                        <div>
+                            <p className="text-muted-foreground">
+                            Cada negocio es único, y su sistema de punto de venta también, dinos lo que necesitas y te ofreceremos la mejor solución
+                            </p>
+                        </div>
+                    </div>
+                    <div className=" w-full flex flex-col justify-center items-center space-y-8">
+                        <div className="flex flex-col justify-center items-start text-md md:text-lg font-normal space-y-1">
+                            <p className="flex gap-2"><Check className="text-green-500" />Número de terminales</p>
+                            <p className="flex gap-2"><Check className="text-green-500" />Cantidad de Impresoras</p>
+                            <p className="flex gap-2"><Check className="text-green-500" />Funciones y herramientas esenciales</p>
+                            <p className="flex gap-2"><Check className="text-green-500" />Soporte y mantenimiento</p>
+                        </div>
+                        <div className="flex justify-center items-center gap-2">
+                            <FcSmartphoneTablet className="hidden md:flex" /> 
+                            <p className="text-lg font-semibold text-center text-muted-foreground">Cuéntanos sobre tu negocio y diseñaremos un presupuesto acorde a tus necesidades.</p>
+                        </div>
                     </div>
                 </div>
-                <div className="w-full flex flex-col justify-center items-center space-y-8">
-                    <div className="flex flex-col justify-center items-start text-sm md:text-lg font-normal space-y-1">
-                        <p className="flex gap-2"><Check className="text-green-500" />Número de terminales</p>
-                        <p className="flex gap-2"><Check className="text-green-500" />Cantidad de Impresoras</p>
-                        <p className="flex gap-2"><Check className="text-green-500" />Funciones y herramientas esenciales</p>
-                        <p className="flex gap-2"><Check className="text-green-500" />Soporte y mantenimiento</p>
-                    </div>
-                    <div className="flex justify-center items-center gap-2">
-                        <FcSmartphoneTablet /> 
-                        <p className="text-lg font-semibold">Cuéntanos sobre tu negocio y diseñaremos un presupuesto acorde a tus necesidades.</p>
-                    </div>
-                </div>
+
             </div>
         </section>
 
         {/* Solicitar Presupuesto */}
-        <section className="w-full h-full flex justify-center items-center">
-            <div className="w-full h-[400px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden">
+        <section className="w-full flex justify-center items-center">
+            <div className="w-full h-[550px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden">
                 <div className="flex flex-col items-center justify-center space-y-8 z-10 px-5">
                     <div className="flex flex-col text-center space-y-4">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿No encuentras <span className="text-green-500">lo que buscas?</span></h2>
