@@ -1,71 +1,24 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import bgproducts from "@/app/img/productos.jpg"
 import { Ripple } from "@/components/magicui/ripple";
+import ProductsCarousel from "@/app/components/productsCarousel";
+import { FcSmartphoneTablet } from "react-icons/fc";
 
 const Products = () => {
     return ( 
         <>
         {/* Dispositivos y Accesorios */}
         <section className="w-full h-screen flex flex-col justify-center items-center">
-            <div className="w-full flex flex-col justify-center items-center">
+            <div className="w-full flex flex-col justify-center items-center max-w-5xl gap-20">
                 <div className="flex flex-col justify-center items-center">
-                    <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Dispositivos y <span className="text-green-400 font-bold">accesorios</span></h2>
-                    <p className="mt-4 text-muted-foreground">Complementa tu sistema con nuestros dispositivos de alta calidad</p>
+                    <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Hardware Certificado para <span className="text-green-400 font-bold">Aloha NCR</span></h2>
+                    <p className="mt-4 text-muted-foreground text-center">Trabajamos con una variedad de marcas reconocidas y certificadas para garantizar la compatibilidad total con el sistema Aloha NCR. Desde terminales táctiles hasta impresoras térmicas y lectores de códigos, te ofrecemos soluciones confiables y eficientes para tu negocio.</p>
                 </div>
                 <div>
-                    <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
-                        {[
-                        {
-                            title: "Terminales Táctiles",
-                            image: "/images/ncrhardware.png",
-                            price: "Desde $799",
-                        },
-                        {
-                            title: "Impresoras Térmicas",
-                            image: "/images/tres.png",
-                            price: "Desde $299",
-                        },
-                        {
-                            title: "Lectores de Códigos",
-                            image: "/images/lector.png",
-                            price: "Desde $149",
-                        },
-                        {
-                            title: "Cajones de Dinero",
-                            image: "/images/cuatro.png",
-                            price: "Desde $199",
-                        },
-                        ].map((device, index) => (
-                        <Card key={index} className="w-60 overflow-hidden hover:shadow-lg shadow-gray-300 dark:shadow-gray-600">
-                            <CardContent className="p-4 2xl:h-full flex flex-col items-center text-center">
-                                <div className="h-32 2xl:h-full flex items-center justify-between mb-6">
-                                    <Image
-                                    src={device.image}
-                                    width={150}
-                                    height={150}
-                                    alt={device.title}
-                                    className="object-cover"
-                                    />
-                                </div>
-                                <div>
-                                    <h3 className="text-lg font-bold">{device.title}</h3>
-                                    <p className="mt-2 text-lg font-medium text-gray-600 dark:text-gray-400">{device.price}</p>
-                                    <div className="mt-4 w-full">
-                                        <Link href="/contactanos">
-                                        <Button size="sm" className="w-full bg-green-600 hover:bg-green-500 text-white cursor-pointer">
-                                            Más Información
-                                        </Button>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </CardContent>
-                        </Card>
-                        ))}
-                    </div>
+                    <ProductsCarousel />
                 </div>
             </div>
         </section>
@@ -97,84 +50,29 @@ const Products = () => {
             </div>
         </section>
         
-        {/* Sistema de Punto de Venta */}
+        {/* Obtén un Presupuesto a la Medida */}
         <section className="w-full h-screen flex flex-col justify-center items-center">
-            <div className="w-full h-full py-20">
-                <div className="space-y-2 flex flex-col justify-center items-center">
-                    <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Sistema de Punto <span className="text-green-400 font-bold">de Venta</span></h1>
-                    <p className="text-muted-foreground text-center">
-                    Soluciones avanzadas para la gestión eficiente de tu negocio
-                    </p>
+            <div className="w-full h-full flex flex-col justify-center items-center space-y-8">
+                <div className="space-y-4 flex flex-col justify-center items-center">
+                    <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Obtén un Presupuesto <span className="text-green-400 font-bold">a la Medida</span></h1>
+                    <div>
+                        <p className="text-muted-foreground text-center">
+                        Cada negocio es único, y su sistema de punto de venta también, dinos lo que necesitas y te ofreceremos la mejor solución
+                        </p>
+                    </div>
                 </div>
-                <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-                {[
-                {
-                    title: "Aloha POS Básico",
-                    description: "Sistema esencial para pequeños negocios",
-                    price: "$1,999",
-                    features: [
-                    "Interfaz intuitiva",
-                    "Gestión de ventas",
-                    "Informes básicos",
-                    "Soporte técnico",
-                    "1 terminal incluido",
-                    ],
-                },
-                {
-                    title: "Aloha POS Avanzado",
-                    description: "Solución para negocios en crecimiento",
-                    price: "$3,499",
-                    features: [
-                    "Todo lo del plan Básico",
-                    "Gestión de inventario",
-                    "Fidelización de clientes",
-                    "Informes avanzados",
-                    "2 terminales incluidos",
-                    ],
-                    highlighted: true,
-                },
-                {
-                    title: "Aloha POS Enterprise",
-                    description: "Para cadenas y grandes establecimientos",
-                    price: "$5,999",
-                    features: [
-                    "Todo lo del plan Avanzado",
-                    "Múltiples ubicaciones",
-                    "Integración con ERP",
-                    "Análisis predictivo",
-                    "5 terminales incluidos",
-                    ],
-                },
-                ].map((product, index) => (
-              <Card key={index} className={`h-full relative hover:border-black hover:shadow-lg shadow-gray-300 dark:hover:border-white dark:shadow-gray-600 ${product.highlighted ? "" : ""}`}>
-                {product.highlighted && (
-                  <div className="absolute -top-3 left-0 right-0 mx-auto w-fit rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                    Recomendado
-                  </div>
-                )}
-                <CardContent className="px-6 py-2 flex flex-col h-full">
-                  <h3 className="text-xl font-bold">{product.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-2">{product.description}</p>
-                  <div className="mt-4 text-3xl font-bold text-green-500">{product.price}</div>
-                  <ul className="mt-4 space-y-2 text-left flex-grow">
-                    {product.features.map((feature, i) => (
-                      <li key={i} className="flex items-center">
-                        <Check className="mr-2 h-4 w-4 text-primary" />
-                        <span className="text-sm 2xl:text-lg">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-6">
-                    <Link href="/contactanos">
-                      <Button className="w-full bg-green-600 hover:bg-green-500 text-white gap-1 cursor-pointer">
-                        Solicitar Información <ArrowRight className="h-4 w-4" />
-                      </Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-                ))}
-            </div>
+                <div className="w-full flex flex-col justify-center items-center space-y-8">
+                    <div className="flex flex-col justify-center items-start text-sm md:text-lg font-normal space-y-1">
+                        <p className="flex gap-2"><Check className="text-green-500" />Número de terminales</p>
+                        <p className="flex gap-2"><Check className="text-green-500" />Cantidad de Impresoras</p>
+                        <p className="flex gap-2"><Check className="text-green-500" />Funciones y herramientas esenciales</p>
+                        <p className="flex gap-2"><Check className="text-green-500" />Soporte y mantenimiento</p>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                        <FcSmartphoneTablet /> 
+                        <p className="text-lg font-semibold">Cuéntanos sobre tu negocio y diseñaremos un presupuesto acorde a tus necesidades.</p>
+                    </div>
+                </div>
             </div>
         </section>
 

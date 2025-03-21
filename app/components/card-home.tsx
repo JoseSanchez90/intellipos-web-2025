@@ -19,7 +19,7 @@ const CardHome = () => {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-3xl lg:max-w-6xl gap-5 md:gap-10 2xl:gap-10">
-                <Card className="relative w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg bg-gray-50 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
+                <Card className="relative w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
                         <div className="p-2 rounded-full bg-green-200 mb-2">
                             <MonitorSmartphone className="h-10 w-10 text-black" />
@@ -35,7 +35,7 @@ const CardHome = () => {
                         className="from-transparent via-green-500 to-transparent"
                     />
                 </Card>
-                <Card className="relative w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg bg-gray-50 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
+                <Card className="relative w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
                         <div className="p-2 rounded-full bg-green-200 mb-2">
                             <Server className="h-10 w-10 text-black" />
@@ -51,7 +51,7 @@ const CardHome = () => {
                         className="from-transparent via-green-500 to-transparent"
                     />
                 </Card>
-                <Card className="relative  w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg bg-gray-50 dark:bg-black dark:shadow-gray-600 transition-all duration-150">
+                <Card className="relative  w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
                         <div className="p-2 rounded-full bg-green-200 mb-2">
                             <ShieldCheck className="h-10 w-10 text-black" />
