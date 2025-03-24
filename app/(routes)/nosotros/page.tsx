@@ -113,17 +113,17 @@ const About = () => {
                     <div className="mx-auto w-72 md:w-full grid md:max-w-5xl gap-4 md:gap-6 md:py-12 md:grid-cols-3">
                         {Valores.map((value, id) => (
                             <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
-                            <CardContent className="flex flex-col items-center text-center space-y-2">
-                            <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
-                            <h3 className="text-lg md:text-xl font-bold">{value.title}</h3>
-                            <p className="text-sm md:text-muted-foreground">{value.description}</p>
-                            </CardContent>
-                            <BorderBeam
-                                duration={6}
-                                size={200}
-                                className="from-transparent via-green-500 to-transparent"
-                            />
-                        </Card>
+                                <CardContent className="flex flex-col items-center text-center space-y-2">
+                                <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
+                                <h3 className="text-lg md:text-xl font-bold">{value.title}</h3>
+                                <p className="text-sm md:text-muted-foreground">{value.description}</p>
+                                </CardContent>
+                                <BorderBeam
+                                    duration={6}
+                                    size={200}
+                                    className="from-transparent via-green-500 to-transparent"
+                                />
+                            </Card>
                         ))}
                     </div>
                 </div>

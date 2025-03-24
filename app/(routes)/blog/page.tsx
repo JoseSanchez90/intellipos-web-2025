@@ -80,7 +80,7 @@ const Blog = () => {
                 <div className="h-full p-4">
                     <div className="hidden w-full h-full p-4 md:grid grid-cols-3 gap-6">
                         {Noticias.map((value, id) => (
-                            <Card key={id} className="h-full border border-gray-200 dark:border-gray-700 transition-all duration-200 hover:shadow-lg hover:shadow-gray-400">
+                            <Card key={id} className="h-full border border-gray-200 dark:border-gray-800 transition-all duration-200 hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-700">
                                 <CardContent className="h-full flex flex-col justify-between space-y-2">
                                     <div className="space-y-3">
                                         <div>
@@ -101,7 +101,7 @@ const Blog = () => {
                                         </div>
                                     </div>
                                     <div className="mt-2">
-                                        <Button asChild>
+                                        <Button asChild className="bg-green-600 hover:bg-green-500">
                                             <a href={value.link} target="_blank" rel="noopener noreferrer">Leer más <ArrowRight /></a>
                                         </Button>
                                     </div>
