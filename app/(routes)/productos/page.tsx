@@ -6,9 +6,11 @@ import bgproducts from "@/app/img/productos.jpg"
 import bghardware from "@/app/img/bg-hardware.jpg"
 import { Ripple } from "@/components/magicui/ripple";
 import ProductsCarousel from "@/app/components/productsCarousel";
-import { FcSmartphoneTablet } from "react-icons/fc";
+import presupuesto from "@/app/img/presupuesto.jpg"
+import presupuestovertical from "@/app/img/presupuesto-vertical.jpg"
 
 const Products = () => {
+
     return ( 
         <>
         {/* Dispositivos y Accesorios */}
@@ -53,27 +55,37 @@ const Products = () => {
         
         {/* Obtén un Presupuesto a la Medida */}
         <section className="w-full h-screen flex justify-center items-center">
-            <div className="w-full h-[550px] md:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center">
-                <div className="space-y-8">
+            <div className="relative w-full h-[550px] md:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center">
+                {/* Imagen de fondo con desenfoque */}
+                <div className="hidden md:flex absolute inset-0">
+                    <Image src={presupuesto} alt="nosotros background" fill className="object-cover bg-cover" />
+                </div>
+                <div className="md:hidden flex absolute inset-0">
+                    <Image src={presupuestovertical} alt="nosotros background" fill className="object-cover bg-cover" />
+                </div>
+
+                <div className="absolute inset-0 bg-black/60"></div>
+
+                <div className="absolute space-y-4 px-5">
                     <div className="space-y-4 flex flex-col justify-center items-center text-center">
-                        <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Obtén un Presupuesto <span className="text-green-400 font-bold">a la Medida</span></h1>
+                        <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Obtén un Presupuesto <span className="text-green-400 font-bold">a la Medida</span></h1>
                         <div>
-                            <p className="text-muted-foreground">
+                            <p className="text-white">
                             Cada negocio es único, y su sistema de punto de venta también, dinos lo que necesitas y te ofreceremos la mejor solución
                             </p>
                         </div>
                     </div>
-                    <div className=" w-full flex flex-col justify-center items-center space-y-8">
+                    <div className="w-full flex flex-col justify-center items-center space-y-8">
                         <div className="flex flex-col justify-center items-start text-md md:text-lg font-normal space-y-1">
-                            <p className="flex gap-2"><Check className="text-green-500" />Número de terminales</p>
-                            <p className="flex gap-2"><Check className="text-green-500" />Cantidad de Impresoras</p>
-                            <p className="flex gap-2"><Check className="text-green-500" />Funciones y herramientas esenciales</p>
-                            <p className="flex gap-2"><Check className="text-green-500" />Soporte y mantenimiento</p>
+                            <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Número de terminales</p>
+                            <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Cantidad de Impresoras</p>
+                            <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Funciones y herramientas esenciales</p>
+                            <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Soporte y mantenimiento</p>
+                            <Link href="/contactanos" scroll={false} className="w-full flex justify-center items-center gap-2 mt-4">
+                                <Button className="w-full bg-green-600 hover:bg-green-500 cursor-pointer">Obtener un presupuesto <ArrowRight/></Button>
+                            </Link>
                         </div>
-                        <div className="flex justify-center items-center gap-2">
-                            <FcSmartphoneTablet className="hidden md:flex" /> 
-                            <p className="text-lg font-semibold text-center text-muted-foreground">Cuéntanos sobre tu negocio y diseñaremos un presupuesto acorde a tus necesidades.</p>
-                        </div>
+                        
                     </div>
                 </div>
 

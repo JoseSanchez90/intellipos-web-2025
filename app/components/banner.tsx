@@ -5,7 +5,7 @@ import Link from "next/link";
 const Banner = () => {
     return ( 
       <section className="w-full h-screen flex justify-center items-center">
-        <div className="relative w-full h-[550px] md:h-[900px] 2xl:h-[500px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900">
+        <div className="relative w-full h-[550px] md:h-[900px] xl:h-[400px] 2xl:h-[500px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900">
           {/* Video de fondo con desenfoque */}
           <div className="hidden lg:flex absolute inset-0">
             <video
