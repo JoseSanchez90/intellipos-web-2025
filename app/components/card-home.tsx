@@ -4,7 +4,7 @@ import { MonitorSmartphone, Server, ShieldCheck } from "lucide-react";
 
 const CardHome = () => {
     return ( 
-        <section id="Ventajas" className="w-full h-screen flex flex-col justify-center items-center gap-10 my-28 lg:my-10 2xl:my-5 px-5">
+        <section className="w-full xl:h-screen flex flex-col justify-center items-center gap-10 my-28 2xl:my-5 px-5">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
                     <div className="inline-flex items-center rounded-full border border-primary/20 dark:text-black bg-green-100 px-2 py-1 text-sm font-semibold text-primary">
@@ -19,7 +19,7 @@ const CardHome = () => {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-3xl lg:max-w-6xl gap-5 md:gap-10 2xl:gap-10">
-                <Card className="relative w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                <Card className="relative w-[300px] md:w-[200px] xl:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
                         <div className="p-2 rounded-full bg-green-200 mb-2">
                             <MonitorSmartphone className="h-10 w-10 text-black" />
@@ -35,7 +35,7 @@ const CardHome = () => {
                         className="from-transparent via-green-500 to-transparent"
                     />
                 </Card>
-                <Card className="relative w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                <Card className="relative w-[300px] md:w-[200px] xl:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
                         <div className="p-2 rounded-full bg-green-200 mb-2">
                             <Server className="h-10 w-10 text-black" />
@@ -51,7 +51,7 @@ const CardHome = () => {
                         className="from-transparent via-green-500 to-transparent"
                     />
                 </Card>
-                <Card className="relative  w-[300px] md:w-[250px] lg:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                <Card className="relative  w-[300px] md:w-[200px] xl:w-[350px] overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                     <CardHeader className="flex justify-center items-center">
                         <div className="p-2 rounded-full bg-green-200 mb-2">
                             <ShieldCheck className="h-10 w-10 text-black" />

@@ -33,7 +33,7 @@ const About = () => {
     return ( 
         <>
             <section className="w-full h-screen flex justify-center items-center">
-                <div className="relative w-full h-[550px] md:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 md:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
+                <div className="relative w-full h-[550px] md:h-[900px] xl:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 xl:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
                     {/* Imagen de fondo con desenfoque */}
                     <div className="hidden sm:flex absolute inset-0">
                         <Image src={fondo} alt="nosotros background" fill className="object-cover bg-cover" />

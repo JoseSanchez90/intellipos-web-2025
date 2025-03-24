@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ShoppingCart } from "lucide-react";
+import Link from "next/link";
 
 const Banner = () => {
     return ( 
       <section className="w-full h-screen flex justify-center items-center">
-        <div className="relative w-full h-[550px] md:h-[400px] 2xl:h-[500px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900">
+        <div className="relative w-full h-[550px] md:h-[900px] 2xl:h-[500px] mx-5 lg:mx-20 rounded-lg overflow-auto flex justify-center items-center border border-gray-900">
           {/* Video de fondo con desenfoque */}
-          <div className="hidden sm:flex absolute inset-0">
+          <div className="hidden lg:flex absolute inset-0">
             <video
               autoPlay
               muted
@@ -17,7 +18,7 @@ const Banner = () => {
               <source src="/video/fondovideo.mp4" type="video/mp4" />
             </video>
           </div>
-          <div className="sm:hidden flex absolute inset-0">
+          <div className="lg:hidden flex absolute inset-0">
             <video
               autoPlay
               muted
@@ -37,8 +38,12 @@ const Banner = () => {
               <p className="mt-4 text-sm md:text-xl text-white font-semibold">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-4">
-              <Button className="w-40 bg-green-600 text-white hover:bg-green-500 cursor-pointer">Solicitar Demo <ArrowRight className="h-4 w-4"/></Button>
+              <Link href="/contactanos" scroll={false}>
+                <Button className="w-40 bg-green-600 text-white hover:bg-green-500 cursor-pointer">Solicitar Demo <ArrowRight className="h-4 w-4"/></Button>
+              </Link>
+             <Link href="/productos" scroll={false}>
               <Button className="w-40 bg-white text-black hover:bg-gray-200 cursor-pointer">Ver Productos <ShoppingCart className="h-4 w-4"/></Button>
+             </Link>
             </div>
           </div>
         </div>

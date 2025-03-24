@@ -36,7 +36,7 @@ const Navbar = () => {
                 <div className="flex items-center space-x-0.5">
                     <Link href="/" scroll={false} className="flex justify-center items-center gap-0.5 cursor-pointer">
                         <h1 className="text-2xl sm:text-3xl font-extrabold text-green-600 cursor-pointer letter-logo">Intelli</h1>
-                        <span className="text-xl sm:text-2xl font-bold text-white bg-green-600 px-1.5 py-0.5 rounded-lg dark:text-gray-100">POS</span>
+                        <span className="text-xl sm:text-2xl font-extrabold md:font-bold text-white bg-green-600 px-1.5 py-0.5 rounded-lg">POS</span>
                     </Link>
                 </div>
                 <div className="hidden lg:flex">
