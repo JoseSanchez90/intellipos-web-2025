@@ -1,6 +1,6 @@
 import { Marquee } from "@/components/magicui/marquee";
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, User } from "lucide-react";
 
 const reviews = [
     {
@@ -29,7 +29,7 @@ const reviews = [
         name: "Daniel Quispe",
         title: "Area de Soporte",
         body: "Analista de Sistemas",
-        img: "/images/user.png",
+        img: "/images/DanielQuispe.png",
       },
       {
         id: 5,
@@ -91,10 +91,10 @@ const ReviewCard = ({
           <figcaption className="text-sm lg:text-lg font-medium dark:text-white">
             {name}
           </figcaption>
-          <p className="text-xs lg:text-sm text-green-600 dark:text-white/40 flex justify-start items-center gap-1"><ArrowRight width={16} />{title}</p>
+          <p className="text-xs lg:text-sm text-green-600 dark:text-white/40 flex justify-start items-center gap-1"><BriefcaseBusiness width={16} /> {title}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm lg:text-normal font-medium text-gray-500">{body}</blockquote>
+      <blockquote className="flex justify-start gap-2 items-center mt-2 text-sm lg:text-normal font-medium text-gray-500"><User width={14} /> {body}</blockquote>
     </figure>
     )
 }

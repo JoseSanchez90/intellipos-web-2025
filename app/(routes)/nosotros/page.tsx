@@ -33,7 +33,7 @@ const About = () => {
     return ( 
         <>
             <section className="w-full h-screen flex justify-center items-center">
-                <div className="relative w-full h-[550px] md:h-[900px] xl:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 xl:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
+                <div className="relative w-full h-[550px] md:h-[900px] xl:h-[400px] 2xl:h-[500px] md:mt-0 mx-5 xl:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
                     {/* Imagen de fondo con desenfoque */}
                     <div className="hidden sm:flex absolute inset-0">
                         <Image src={fondo} alt="nosotros background" fill className="object-cover bg-cover" />
@@ -45,9 +45,9 @@ const About = () => {
                     <div className="absolute inset-0 bg-black/60"></div>
             
                     <div className="absolute flex flex-col items-center justify-center">
-                        <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl">
-                            <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Sobre <span className="text-green-400 font-bold">Intelli</span>POS</h1>
-                            <p className="mt-4 text-sm md:text-xl text-white font-semibold">Conoce nuestra historia y misión como proveedores líderes de sistemas Aloha NCR IntelliPOS nació en 2005 con la visión de transformar la manera en que los negocios gestionan sus operaciones de venta. Desde entonces, nos hemos convertido en líderes en la implementación de sistemas Aloha NCR, ayudando a cientos de empresas a optimizar sus procesos y mejorar la experiencia de sus clientes.</p>
+                        <div className="p-5 bg-opacity-50 rounded-l text-center max-w-5xl">
+                            <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Somos <span className="text-green-400 font-bold">IntelliPOS, </span>representantes de la Corporación <span className="text-green-400 font-bold">Aloha NCR</span></h1>
+                            <p className="mt-4 text-sm md:text-xl text-white font-semibold">Aloha NCR es una solución de software líder en el sector de la hospitalidad, con 30 años de experiencia y presencia en más de 100,000 restaurantes a nivel mundial. Reconocida como una de las 10 mejores soluciones en su categoría, Aloha NCR se especializa en la gestión eficiente de operaciones en restaurantes, brindando tecnología innovadora y confiable. En Perú, está disponible a través de IntelliPOS S.A.C. desde 2017, ofreciendo soporte y adaptación a las necesidades del mercado local.</p>
                         </div>
                     </div>
                 </div>
