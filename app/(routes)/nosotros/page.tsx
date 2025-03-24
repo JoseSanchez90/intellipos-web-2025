@@ -82,7 +82,7 @@ const About = () => {
                 <div className="w-full h-full flex flex-col justify-center items-center">
                     <div className="flex flex-col items-center justify-center">
                         <div className="p-5 bg-opacity-50 rounded-l text-center max-w-3xl">
-                            <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Nuestra <span className="text-green-400 font-bold">Mision</span> y <span className="text-green-400 font-bold">Vision</span></h1>
+                            <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Nuestra Mision <span className="text-green-400 font-bold">y Vision</span></h1>
                             <p className="mt-4 text-muted-foreground md:text-lg">Comprometidos con la innovación y la excelencia, trabajamos para optimizar los negocios de nuestros clientes con tecnología avanzada y un servicio de calidad.</p>
                         </div>
                     </div>
