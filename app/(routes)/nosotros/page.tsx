@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import fondo from "@/app/img/fondonosotros.jpg"
 import fondo2 from "@/app/img/nosotros.jpg"
@@ -5,8 +7,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import hands from "@/app/img/hands.gif"
 import plane from "@/app/img/plane.gif"
-import { Award, Clock, Users } from "lucide-react";
+import { Award, Clock, Leaf, Lightbulb, Shield, Users } from "lucide-react";
 import TeamCarousel from "@/app/components/teamCarousel";
+import { CarouselValores } from "@/app/components/carousel-valores";
 
 const Valores = [
     {
@@ -27,13 +30,34 @@ const Valores = [
         title: "Compromiso",
         description: "Nos comprometemos con el éxito de nuestros clientes, ofreciendo soporte continuo y soluciones a largo plazo."
     },
+    {
+        id: 4,
+        icon: <Lightbulb className="h-10 w-10" />,
+        title: "Innovación",
+        description:
+          "Buscamos constantemente nuevas formas de mejorar nuestros productos y servicios para mantenernos a la vanguardia del sector.",
+      },
+      {
+        id: 5,
+        icon: <Shield className="h-10 w-10" />,
+        title: "Integridad",
+        description:
+          "Actuamos con honestidad y transparencia en todas nuestras operaciones, construyendo relaciones basadas en la confianza.",
+      },
+      {
+        id: 6,
+        icon: <Leaf className="h-10 w-10" />,
+        title: "Responsabilidad",
+        description:
+          "Asumimos la responsabilidad de nuestras acciones y nos comprometemos con prácticas sostenibles y éticas en nuestro negocio.",
+      },
 ]
 
 const About = () => {
     return ( 
         <>
-            <section className="w-full h-screen flex justify-center items-center">
-                <div className="relative w-full h-[550px] md:h-[900px] xl:h-[400px] 2xl:h-[500px] md:mt-0 mx-5 xl:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
+            <section className="w-full h-full md:h-screen flex justify-center items-center mt-24 md:mt-0">
+                <div className="relative w-full h-[550px] md:h-[900px] xl:h-[400px] 2xl:h-[500px] mx-5 xl:mx-20 rounded-lg overflow-auto flex justify-center items-center border">
                     {/* Imagen de fondo con desenfoque */}
                     <div className="hidden sm:flex absolute inset-0">
                         <Image src={fondo} alt="nosotros background" fill className="object-cover bg-cover" />
@@ -54,16 +78,17 @@ const About = () => {
             </section>
 
             {/* Mision y Vision */}
-            <section className="h-full flex flex-col justify-center gap-5 items-center mx-5 md:mx-20 ">
-                <div className="w-full h-screen space-y-4">
+            <section className="h-full md:h-screen flex flex-col justify-center gap-5 items-center my-20 md:my-0 mx-5 md:mx-20">
+                <div className="w-full h-full flex flex-col justify-center items-center">
                     <div className="flex flex-col items-center justify-center">
                         <div className="p-5 bg-opacity-50 rounded-l text-center max-w-3xl">
                             <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Nuestra <span className="text-green-400 font-bold">Mision</span> y <span className="text-green-400 font-bold">Vision</span></h1>
+                            <p className="mt-4 text-muted-foreground md:text-lg">Comprometidos con la innovación y la excelencia, trabajamos para optimizar los negocios de nuestros clientes con tecnología avanzada y un servicio de calidad.</p>
                         </div>
                     </div>
-                    <div className="max-w-5xl grid lg:grid-cols-2 gap-6 md:py-12 mx-auto">
+                    <div className="max-w-5xl grid lg:grid-cols-2 gap-6 mt-4 mx-auto">
                         <Card className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
-                            <CardContent className="md:p-6">
+                            <CardContent className="md:p-4">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Misión</h3>
                                     <Image src={hands} alt="manos" className="w-12" />
@@ -81,7 +106,7 @@ const About = () => {
                             />
                         </Card>
                         <Card className="relative h overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
-                            <CardContent className="md:p-6">
+                            <CardContent className="md:p-4">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Visión</h3>
                                     <Image src={plane} alt="manos" className="w-12" />
@@ -102,15 +127,15 @@ const About = () => {
             </section>
 
             {/* Nuestros Valores */}
-            <section className="h-screen mx-5 md:mx-20 flex flex-col justify-center items-center">
-                <div className="h-screen space-y-6 md:space-y-2">
+            <section className="h-full md:h-screen flex flex-col justify-center gap-5 items-center my-20 md:my-0 mx-5 md:mx-20">
+                <div className="w-full h-full flex flex-col justify-center items-center my-10 md:my-0">
                     <div className="flex flex-col items-center justify-center text-center">
-                        <div className="space-y-2 md:space-y-4">
+                        <div className="space-y-2">
                             <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Nuestros <span className="text-green-500">Valores</span></h2>
                             <p className="mt-4 text-muted-foreground md:text-lg">Los principios que guían nuestro trabajo diario</p>
                         </div>
                     </div>
-                    <div className="mx-auto w-72 md:w-full grid md:max-w-5xl gap-4 md:gap-6 md:py-12 md:grid-cols-3">
+                    <div className="hidden mx-auto w-72 md:w-full md:grid md:max-w-5xl gap-4 mt-6 md:gap-6 md:grid-cols-3">
                         {Valores.map((value, id) => (
                             <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
                                 <CardContent className="flex flex-col items-center text-center space-y-2">
@@ -126,11 +151,14 @@ const About = () => {
                             </Card>
                         ))}
                     </div>
+                    <div className="md:hidden flex py-6">
+                        <CarouselValores />
+                    </div>
                 </div>
             </section>
             
             {/* Equipo */}
-            <TeamCarousel />
+            <TeamCarousel /> 
         </>
      );
 }

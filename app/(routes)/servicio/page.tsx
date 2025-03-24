@@ -92,8 +92,8 @@ const Services = () => {
 
     return (
         <>
-        <section className="w-full h-screen flex justify-center items-center">
-            <div className="w-full h-[550px] md:h-[400px] 2xl:h-[500px] mt-8 md:mt-0 mx-5 md:mx-20 flex justify-center items-center">
+        <section className="w-full h-full md:h-screen flex justify-center items-center">
+            <div className="w-full h-[550px] md:h-[400px] 2xl:h-[500px] mt-24 md:mt-0 mx-5 md:mx-20 flex justify-center items-center">
                 {/* Grid principal con Bento Layout */}
                 <div className="grid md:grid-cols-3 grid-rows-6 gap-4 w-full h-full relative">
                     {/* Imagen vertical grande (col-izquierda) */}
@@ -135,8 +135,8 @@ const Services = () => {
         </section>
 
         {/* Servicios Principales */}
-        <section className="h-full flex flex-col justify-center items-center mx-5 lg:mt-24 2xl:mt-16">
-            <div className="h-screen w-full flex flex-col justify-center items-center">
+        <section className="h-full md:h-screen flex flex-col justify-center items-center mx-5 my-20 md:my-0 lg:mt-16 2xl:mt-0">
+            <div className="h-full w-full flex flex-col justify-center items-center">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Servicios <span className="text-green-500 font-bold">Principales</span></h1>
@@ -165,6 +165,7 @@ const Services = () => {
             </div>
         </section>
 
+        {/* Como mejoras la experiencia */}
         <section className="h-full flex justify-center items-center px-5 md:mx-20 lg:mt-16">
             <div className="relative w-full h-[550px] md:h-[400px] 2xl:h-[500px]  rounded-lg overflow-auto flex justify-center items-center border">
                 {/* Imagen de fondo con desenfoque */}
@@ -219,8 +220,8 @@ const Services = () => {
         </section>
 
         {/* Implementacion */}
-        <section className="h-full flex justify-center items-center mx-5 mt-16 lg:mt-24">
-            <div className="w-full h-screen flex flex-col items-center justify-center md:space-y-4 text-center">
+        <section className="h-full md:h-screen flex justify-center items-center mx-5 my-20 md:my-0 lg:mt-20">
+            <div className="w-full h-full flex flex-col items-center justify-center md:space-y-4 text-center">
                 <div className="space-y-2">
                     <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Proceso de <span className="text-green-400 font-bold">Implementación</span></h1>
                     <p className="mt-4 text-muted-foreground md:text-lg">
@@ -243,8 +244,9 @@ const Services = () => {
             </div>
         </section>
 
+        {/* Listo para mejorar tu negocio */}
         <section className="h-full flex justify-center items-center">
-            <div className="w-full h-[400px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden">
+            <div className="w-full h-[500px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden">
                 <div className="flex flex-col items-center justify-center gap-8 z-10 px-5">
                     <div className="flex flex-col text-center gap-5">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Listo para mejorar tu <span className="text-green-500">negocio</span>?</h2>
