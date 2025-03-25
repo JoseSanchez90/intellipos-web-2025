@@ -34,7 +34,7 @@ const SystemAloha = () => {
 
                 <div className="absolute max-w-5xl flex flex-col justify-center items-center space-y-4 md:space-y-10 xl:space-y-4 px-5">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white text-center">¿Que ofrece <span className="text-green-500">IntelliPOS?</span></h2> 
-                    <p className="text-white md:text-xl text-center">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
+                    <p className="text-white md:text-xl text-center">Ofrecemos una solución completa que se adapta a cualquier tamaño y/o tipo de negocio desde la operación hasta la fidelización de tus clientes</p>
                     <div className="space-y-6">
                         <ul className="grid text-left max-w-2xl mx-auto text-lg text-white">
                         {[
