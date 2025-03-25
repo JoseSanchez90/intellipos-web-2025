@@ -32,7 +32,7 @@ const Navbar = () => {
 
     return ( 
         <nav className="w-full flex justify-center items-center">
-            <div className={`fixed top-0 z-50 flex justify-between items-center py-4 px-6 md:px-28 2xl:px-32 transition-all duration-500 ${isScrolled ? "backdrop-blur-sm bg-white/80 dark:bg-black/80 border border-gray-200 dark:border-gray-800 shadow-lg dark:shadow-gray-700 md:rounded-full md:px-20 text-sm md:mt-4 w-full md:w-[80%] transform" : "text-base w-full"}`}>
+            <div className={`fixed top-0 z-50 flex justify-between items-center py-4 px-6 md:px-28 2xl:px-32 transition-all duration-500 ${isScrolled ? "backdrop-blur-sm bg-white/80 dark:bg-black/80 border border-gray-200 dark:border-gray-800 shadow-lg dark:shadow-gray-700 md:rounded-full md:px-20 text-sm md:mt-3 w-full md:w-[80%] transform" : "text-base w-full"}`}>
                 <div className="flex items-center space-x-0.5">
                     <Link href="/" scroll={false} className="flex justify-center items-center gap-0.5 cursor-pointer">
                         <h1 className="text-2xl sm:text-3xl font-extrabold text-green-600 cursor-pointer letter-logo">Intelli</h1>
