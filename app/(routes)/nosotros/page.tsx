@@ -91,7 +91,7 @@ const About = () => {
                             <CardContent className="md:p-4">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Misión</h3>
-                                    <Image src={hands} alt="manos" className="w-12" />
+                                    <Image src={hands} alt="manos" className="w-12" unoptimized />
                                 </div>
                                 <p className="text-muted-foreground">
                                 Proporcionar soluciones tecnológicas innovadoras que permitan a nuestros clientes optimizar sus
@@ -109,7 +109,7 @@ const About = () => {
                             <CardContent className="md:p-4">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Visión</h3>
-                                    <Image src={plane} alt="manos" className="w-12" />
+                                    <Image src={plane} alt="manos" className="w-12" unoptimized />
                                 </div> 
                                 <p className="text-muted-foreground">
                                 Ser reconocidos como el socio tecnológico de referencia en el sector de sistemas de punto de venta,
