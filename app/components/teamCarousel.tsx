@@ -1,6 +1,6 @@
 import { Marquee } from "@/components/magicui/marquee";
 import { cn } from "@/lib/utils";
-import { ArrowRight, BriefcaseBusiness, User } from "lucide-react";
+import { BriefcaseBusiness, User } from "lucide-react";
 
 const reviews = [
       {

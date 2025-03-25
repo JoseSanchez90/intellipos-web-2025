@@ -5,8 +5,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel"
 import { ArrowRight, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"

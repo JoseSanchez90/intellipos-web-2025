@@ -2,7 +2,6 @@
 
 import MenuListMobile from "./menu-list-mobile";
 import { ModeToggle } from "./toggle";
-import { useRouter } from 'next/navigation';
 import { MenuList } from "./menu-list";
 import { useEffect, useState } from "react";
 import Link from "next/link";
