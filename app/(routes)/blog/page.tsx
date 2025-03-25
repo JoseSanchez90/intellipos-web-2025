@@ -98,7 +98,7 @@ const Blog = () => {
                                         </div>
                                     </div>
                                     <div className="mt-2">
-                                        <Button asChild className="bg-green-600 hover:bg-green-500">
+                                        <Button asChild className="bg-green-600 text-white hover:bg-green-500">
                                             <a href={value.link} target="_blank" rel="noopener noreferrer">Leer más <ArrowRight /></a>
                                         </Button>
                                     </div>

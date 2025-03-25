@@ -19,7 +19,7 @@ const Ready = () => {
                         </Button>
                     </Link>
                     <Link href="/productos">
-                        <Button size="lg" variant="outline" className="cursor-pointer">
+                        <Button size="lg" variant="outline" className="cursor-pointer dark:bg-white dark:text-black hover:dark:bg-gray-200">
                         Ver Productos
                         </Button>
                     </Link>

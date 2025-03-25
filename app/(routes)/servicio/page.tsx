@@ -212,7 +212,7 @@ const Services = () => {
                             ))
                             }
                             <Link href="/contactanos">
-                                <Button className="w-full mt-8 md:mt-4 2xl:mt-8 bg-green-600 hover:bg-green-500 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/></Button>
+                                <Button className="w-full mt-8 md:mt-4 2xl:mt-8 bg-green-600 text-white hover:bg-green-500 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/></Button>
                             </Link>
                         </div>
                     </div>

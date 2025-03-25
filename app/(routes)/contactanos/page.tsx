@@ -87,7 +87,7 @@ const Contact = () => {
                                             <textarea name="" id="" placeholder="¿En que podemos ayudarte?" className="outline-green-500 border border-gray-400 rounded-lg py-2 px-3 w-full h-full resize-none" cols={5} rows={3} />
                                         </div>
                                         <div className="w-full">
-                                            <Button type="submit" className="w-full cursor-pointer bg-green-600 hover:bg-green-500"><Send/> Enviar mensaje</Button>
+                                            <Button type="submit" className="w-full cursor-pointer bg-green-600 text-white hover:bg-green-500"><Send/> Enviar mensaje</Button>
                                         </div>
                                     </div>
                                 </form>
