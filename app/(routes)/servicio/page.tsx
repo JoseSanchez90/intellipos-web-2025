@@ -143,9 +143,9 @@ const Services = () => {
                         <p className="mt-4 text-muted-foreground md:text-lg">Soluciones completas para optimizar tu negocio.</p>
                     </div>
                 </div>
-                <div className="hidden mx-auto md:grid max-w-5xl gap-2 md:gap-4 md:py-10 md:grid-cols-3 py-6">
+                <div className="hidden mx-auto md:grid max-w-5xl gap-y-8 gap-x-8 md:py-10 md:grid-cols-3 py-6">
                     {ServicesGeneral.map((value, id) => (
-                        <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                        <Card key={id} className="relative overflow-hidden border-none hover:shadow-lg dark:shadow-gray-700 transition-all duration-150">
                             <CardContent className="flex flex-col items-center text-center space-y-2">
                                 <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
                                 <h3 className="text-lg md:text-xl font-bold">{value.title}</h3>
@@ -205,14 +205,14 @@ const Services = () => {
                                     description: "Reportes mensuales de atenciones y SLA"   
                                 },
                             ].map((Coments, id) => (
-                            <div key={id} className="flex flex-row justify-start items-start md:items-end gap-2 py-1">
+                            <div key={id} className="flex flex-row justify-start items-start md:items-end gap-2">
                                <Check className="text-green-500" />
                                <p className="text-sm md:text-lg text-white font-semibold w-full md:max-w-xl text-start">{Coments.description}</p>
                             </div> 
                             ))
                             }
                             <Link href="/contactanos">
-                                <Button className="w-full mt-8 md:mt-4 2xl:mt-8 bg-white text-black hover:bg-gray-200 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/></Button>
+                                <Button className="w-full mt-8 md:mt-4 2xl:mt-8 bg-green-600 hover:bg-green-500 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/></Button>
                             </Link>
                         </div>
                     </div>
@@ -248,18 +248,14 @@ const Services = () => {
         {/* Listo para mejorar tu negocio */}
         <section className="h-full flex justify-center items-center">
             <div className="w-full h-[500px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden">
-                <div className="flex flex-col items-center justify-center gap-8 z-10 px-5">
-                    <div className="flex flex-col text-center gap-5">
+                <div className="flex flex-col items-center justify-center space-y-6 z-10 px-5">
+                    <div className="flex flex-col text-center space-y-4">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Listo para mejorar tu <span className="text-green-500">negocio</span>?</h2>
-                        <p className="mt-4 text-muted-foreground md:text-lg">Contáctanos hoy mismo para conocer cómo nuestros servicios pueden ayudarte</p>
+                        <p className="text-muted-foreground md:text-lg">Contáctanos hoy mismo para conocer cómo nuestros servicios pueden ayudarte</p>
                     </div>
-                    <div className="flex flex-col min-[400px]:flex-row">
-                        <Link href="/contactanos">
-                            <Button size="lg" className="gap-1 cursor-pointer text-white bg-green-600 hover:bg-green-500">
-                            Solicitar información <ArrowRight className="h-4 w-4" />
-                            </Button>
-                        </Link>
-                    </div>
+                    <Link href="/contactanos">
+                        <Button size="lg" className="gap-1 cursor-pointer text-white bg-green-600 hover:bg-green-500">Solicitar información <ArrowRight className="h-4 w-4" /></Button>
+                    </Link>
                 </div>
                 <div className="hidden md:flex">
                     <Ripple mainCircleSize={100} />

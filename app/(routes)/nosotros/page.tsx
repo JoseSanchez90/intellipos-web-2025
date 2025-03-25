@@ -83,11 +83,11 @@ const About = () => {
                     <div className="flex flex-col items-center justify-center">
                         <div className="p-5 bg-opacity-50 rounded-l text-center max-w-3xl">
                             <h1 className="font-bold tracking-tighter text-3xl md:text-5xl">Nuestra Mision <span className="text-green-400 font-bold">y Vision</span></h1>
-                            <p className="mt-4 text-muted-foreground md:text-lg">Comprometidos con la innovación y la excelencia, trabajamos para optimizar los negocios de nuestros clientes con tecnología avanzada y un servicio de calidad.</p>
+                            <p className="mt-4 text-muted-foreground md:text-lg">Innovación y excelencia para optimizar tu negocio con tecnología avanzada.</p>
                         </div>
                     </div>
                     <div className="max-w-5xl grid lg:grid-cols-2 gap-6 mt-4 mx-auto">
-                        <Card className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                        <Card className="relative overflow-hidden border-none hover:shadow-lg dark:shadow-gray-700 transition-all duration-150">
                             <CardContent className="md:p-4">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Misión</h3>
@@ -105,7 +105,7 @@ const About = () => {
                                 className="from-transparent via-green-500 to-transparent"
                             />
                         </Card>
-                        <Card className="relative h overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                        <Card className="relative h overflow-hidden border-none hover:shadow-lg dark:shadow-gray-700 transition-all duration-150">
                             <CardContent className="md:p-4">
                                 <div className="flex justify-center items-center gap-10 mb-4">
                                     <h3 className="text-xl font-bold">Visión</h3>
@@ -137,7 +137,7 @@ const About = () => {
                     </div>
                     <div className="hidden mx-auto w-72 md:w-full md:grid md:max-w-5xl gap-4 mt-6 md:gap-6 md:grid-cols-3">
                         {Valores.map((value, id) => (
-                            <Card key={id} className="relative overflow-hidden hover:shadow-lg dark:shadow-gray-600 transition-all duration-150">
+                            <Card key={id} className="relative overflow-hidden border-none hover:shadow-lg dark:shadow-gray-700 transition-all duration-150">
                                 <CardContent className="flex flex-col items-center text-center space-y-2">
                                 <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
                                 <h3 className="text-lg md:text-xl font-bold">{value.title}</h3>

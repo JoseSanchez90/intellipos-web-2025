@@ -45,7 +45,7 @@ const Products = () => {
                         <p className="text-sm md:text-xl text-white font-semibold">Ofrecemos equipos NCR con la última tecnología, reconocidos por su robustez y confiabilidad. Como la marca líder en Retail, Banca y Hospitalidad, contamos con una línea completa de soluciones para todas las necesidades, respaldadas por soporte de hardware a nivel nacional.</p>
                         <div className="">
                             <Link href="/contactanos">
-                                <Button className="w-56 bg-white text-black hover:bg-gray-200 cursor-pointer">Solicitar más información <ArrowRight className="h-4 w-4" /></Button>
+                                <Button className="w-56 bg-green-600 text-white hover:bg-green-500 cursor-pointer">Solicitar más información <ArrowRight className="h-4 w-4" /></Button>
                             </Link>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ const Products = () => {
                                 <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Soporte y mantenimiento</p>
                             </div>
                             <Link href="/contactanos" scroll={false} className="w-full flex justify-center items-center gap-2 mt-4">
-                                <Button className="w-full bg-green-600 hover:bg-green-500 cursor-pointer">Solicitar un presupuesto <ArrowRight/></Button>
+                                <Button className="w-full bg-green-600 text-white hover:bg-green-500 cursor-pointer">Solicitar un presupuesto <ArrowRight/></Button>
                             </Link>
                         </div>
                     </div>

@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import {  Award, Clock, Leaf, Lightbulb, Shield, Users, } from "lucide-react"
+import { BorderBeam } from "@/components/magicui/border-beam"
 
 const Valores = [
     {
@@ -69,12 +70,17 @@ export function CarouselValores() {
         {Valores.map((value, id) => (
           <CarouselItem key={id}>
             <div className="p-1">
-              <Card className="w-full h-64 flex flex-col justify-center items-center">
+              <Card className="relative overflow-hidden w-full h-64 flex flex-col justify-center items-center">
                 <CardContent className="w-full h-full flex flex-col items-center text-center space-y-2">
                   <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
                   <h3 className="md:text-xl font-bold">{value.title}</h3>
                   <p className="text-sm md:text-muted-foreground">{value.description}</p>
                 </CardContent>
+                <BorderBeam
+                    duration={6}
+                    size={200}
+                    className="from-transparent via-green-500 to-transparent"
+                />
               </Card>
             </div>
           </CarouselItem>

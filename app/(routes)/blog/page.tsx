@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Calendar } from "lucide-react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 const Blog = () => {
 
@@ -67,8 +66,6 @@ const Blog = () => {
             link: "https://datascope.io/es/blog/aumenta-tus-ventas-usando-sistemas-pos/"
         },
     ]
-    
-    const router = useRouter()
 
     return ( 
         <section className="w-full h-full flex flex-col justify-center items-center px-2 md:px-20 space-y-4 pb-10 mt-16">

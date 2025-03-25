@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { BarChart, BookOpen, Clock, Headphones, HeartHandshake, Wrench } from "lucide-react"
+import { BorderBeam } from "@/components/magicui/border-beam"
 
 const ServicesGeneral = [
   {
@@ -66,12 +67,17 @@ export function CarouselServices() {
         {ServicesGeneral.map((value, id) => (
           <CarouselItem key={id}>
             <div className="p-1">
-              <Card className="h-48">
+              <Card className="h-48 relative overflow-hidden">
                 <CardContent className="flex flex-col items-center text-center space-y-2">
                   <div className="p-2 rounded-full bg-green-200 dark:text-black mb-2">{value.icon}</div>
                   <h3 className="md:text-xl font-bold">{value.title}</h3>
                   <p className="text-sm md:text-muted-foreground">{value.description}</p>
                 </CardContent>
+                <BorderBeam
+                    duration={6}
+                    size={200}
+                    className="from-transparent via-green-500 to-transparent"
+                />
               </Card>
             </div>
           </CarouselItem>

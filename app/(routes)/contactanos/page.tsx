@@ -21,7 +21,7 @@ const Contact = () => {
                     <h2 className="font-bold tracking-tighter text-3xl md:text-5xl">Estamos aquí <span className="text-green-400">para ayudarte</span></h2>
                     <p className="mt-2 text-muted-foreground text-center">Nuestro equipo está listo para responder tus preguntas y ayudarte a encontrar la solución perfecta para tu negocio.</p>
                 </div>
-                <div className="h-full flex flex-col md:grid md:grid-cols-2 w-full gap-10 mt-10">
+                <div className="h-full flex flex-col md:grid md:grid-cols-2 w-full gap-10 mt-16">
                     {/* Envianos un mensaje */}
                     <div>
                         <div className="space-y-6">
@@ -109,7 +109,7 @@ const Contact = () => {
                                     <p className="text-green-600">Contacto@intellipos.com.pe</p>
                                 </CardContent>
                                 <BorderBeam
-                                    duration={6}
+                                    duration={10}
                                     size={200}
                                     className="from-transparent via-green-500 to-transparent"
                                 />
@@ -121,7 +121,7 @@ const Contact = () => {
                                     <p className="text-green-600">(01) 776 9520</p>
                                 </CardContent>
                                 <BorderBeam
-                                    duration={6}
+                                    duration={10}
                                     size={200}
                                     className="from-transparent via-green-500 to-transparent"
                                 />

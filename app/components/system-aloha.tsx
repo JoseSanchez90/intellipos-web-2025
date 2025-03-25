@@ -35,7 +35,7 @@ const SystemAloha = () => {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Sistema <span className="text-green-500">Aloha</span> NCR</h2> 
                 <p className="text-white md:text-xl text-center">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
                 <div>
-                <ul className="grid gap-2 text-left max-w-md mx-auto text-lg text-white">
+                <ul className="grid text-left max-w-md mx-auto text-lg text-white">
                     {[
                         "Gestión de inventario en tiempo real",
                         "Procesamiento rápido de pagos",
@@ -51,7 +51,7 @@ const SystemAloha = () => {
                     </ul>
                     <div className="mt-6 md:mt-10 xl:mt-6">
                         <Link href="/servicio">
-                            <Button className="gap-1 bg-white hover:bg-gray-200 text-black cursor-pointer w-full">
+                            <Button className="gap-1 bg-green-600 hover:bg-green-500 cursor-pointer w-full">
                             Conocer Más <ArrowRight className="h-4 w-4" />
                             </Button>
                         </Link>
