@@ -40,12 +40,12 @@ const Products = () => {
                 <div className="absolute inset-0 bg-black/60"></div>
             
                 <div className="absolute flex flex-col items-center justify-center">
-                    <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl">
+                    <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl space-y-6 sm:space-y-4">
                         <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Hardware <span className="text-green-400 font-bold">Compatible</span></h1>
-                        <p className="mt-4 text-sm md:text-xl text-white font-semibold">Ofrecemos equipos NCR con la última tecnología, reconocidos por su robustez y confiabilidad. Como la marca líder en Retail, Banca y Hospitalidad, contamos con una línea completa de soluciones para todas las necesidades, respaldadas por soporte de hardware a nivel nacional.</p>
-                        <div className="mt-4">
+                        <p className="text-sm md:text-xl text-white font-semibold">Ofrecemos equipos NCR con la última tecnología, reconocidos por su robustez y confiabilidad. Como la marca líder en Retail, Banca y Hospitalidad, contamos con una línea completa de soluciones para todas las necesidades, respaldadas por soporte de hardware a nivel nacional.</p>
+                        <div className="">
                             <Link href="/contactanos">
-                            <Button className="w-56 bg-white text-black hover:bg-gray-200 cursor-pointer">Ver Catálogo Completo <ArrowRight className="h-4 w-4" /></Button>
+                                <Button className="w-56 bg-white text-black hover:bg-gray-200 cursor-pointer">Solicitar más información <ArrowRight className="h-4 w-4" /></Button>
                             </Link>
                         </div>
                     </div>
@@ -71,18 +71,20 @@ const Products = () => {
                         <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Obtén un Presupuesto <span className="text-green-400 font-bold">a la Medida</span></h1>
                         <div>
                             <p className="text-white">
-                            Cada negocio es único, y su sistema de punto de venta también, dinos lo que necesitas y te ofreceremos la mejor solución
+                            Cada negocio es único, y el sistema tambien, indicanos lo que necesitas y te ofreceremos la mejor solución
                             </p>
                         </div>
                     </div>
-                    <div className="w-full flex flex-col justify-center items-center space-y-8">
-                        <div className="flex flex-col justify-center items-start text-md md:text-lg font-normal space-y-1">
-                            <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Número de terminales</p>
-                            <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Cantidad de Impresoras</p>
-                            <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Funciones y herramientas esenciales</p>
-                            <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Soporte y mantenimiento</p>
+                    <div className="w-full flex flex-col justify-center items-center">
+                        <div className="flex flex-col justify-center items-start text-md md:text-lg font-normal space-y-4">
+                            <div className="flex flex-col">
+                                <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Número de terminales</p>
+                                <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Cantidad de Impresoras</p>
+                                <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Funciones y herramientas esenciales</p>
+                                <p className="flex gap-2 text-white text-sm md:text-lg font-semibold"><Check className="text-green-500" />Soporte y mantenimiento</p>
+                            </div>
                             <Link href="/contactanos" scroll={false} className="w-full flex justify-center items-center gap-2 mt-4">
-                                <Button className="w-full bg-green-600 hover:bg-green-500 cursor-pointer">Obtener un presupuesto <ArrowRight/></Button>
+                                <Button className="w-full bg-green-600 hover:bg-green-500 cursor-pointer">Solicitar un presupuesto <ArrowRight/></Button>
                             </Link>
                         </div>
                     </div>
@@ -102,7 +104,7 @@ const Products = () => {
                     <div className="flex flex-col min-[400px]:flex-row">
                         <Link href="/contactanos">
                             <Button size="lg" className="gap-1 cursor-pointer text-white bg-green-600 hover:bg-green-500">
-                            Solicitar presupuesto <ArrowRight className="h-4 w-4" />
+                            Contactanos <ArrowRight className="h-4 w-4" />
                             </Button>
                         </Link>
                     </div>

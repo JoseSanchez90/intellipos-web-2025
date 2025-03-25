@@ -55,7 +55,7 @@ const Valores = [
 
 export function CarouselValores() {
   const plugin = React.useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: true })
+    Autoplay({ delay: 5000, stopOnInteraction: false })
   )
 
   return (

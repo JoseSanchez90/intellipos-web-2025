@@ -3,57 +3,43 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, BriefcaseBusiness, User } from "lucide-react";
 
 const reviews = [
-    {
-        id: 1,
-        name: "Ing. Juan Carlos",
-        title: "Gerencia",
-        body: "Gerente General IntelliPOS",
-        img: "/images/user.png"
-    },
-    {
-        id: 2,
-        name: "Ing. Renan Urteaga",
-        title: "Gerencia",
-        body: "Gerente IntelliPOS",
-        img: "/images/user.png"
-    },
       {
-        id: 3,
+        id: 1,
         name: "Alex Paredes",
         title: "Area de Soporte",
         body: "Analista de Sistemas",
         img: "/images/AlexParedes.png",
       },
       {
-        id: 4,
+        id: 2,
         name: "Daniel Quispe",
         title: "Area de Soporte",
         body: "Analista de Sistemas",
         img: "/images/user.png",
       },
       {
-        id: 5,
+        id: 3,
         name: "Jose Castro",
         title: "Area de Soporte",
         body: "Analista de Sistemas",
         img: "/images/user.png",
       },
       {
-        id: 6,
+        id: 4,
         name: "Jose Sanchez",
         title: "Area de Soporte",
         body: "Analista de Sistemas",
         img: "/images/user.png",
       },
       {
-        id: 7,
+        id: 5,
         name: "Jose Carrasco",
         title: "Area de Desarrollo",
         body: "Programador .NET",
         img: "/images/user.png",
       },
       {
-        id: 8,
+        id: 6,
         name: "Henrry Ordinola",
         title: "Area de Soporte",
         body: "Coordinador TI",
@@ -77,7 +63,7 @@ const ReviewCard = ({
     return (
         <figure
       className={cn(
-        "relative h-40 w-72 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-40 w-72 cursor-default overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-100",
         // dark styles
@@ -107,7 +93,7 @@ const TeamCarousel = () => {
                   <p className="text-muted-foreground md:text-lg">Profesionales dedicados a tu éxito</p>
                 </div>
                 <div className="relative flex max-w-5xl 2xl:max-w-7xl flex-col items-center justify-center overflow-hidden">
-                  <Marquee pauseOnHover className="[--duration:30s]">
+                  <Marquee className="[--duration:40s]">
                       {firstRow.map((review) => (
                       <ReviewCard key={review.id} {...review} />
                       ))}

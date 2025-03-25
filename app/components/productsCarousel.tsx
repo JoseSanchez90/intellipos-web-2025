@@ -36,7 +36,7 @@ const ReviewCard = ({
             "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
             )}>
             
-                <img className="rounded-lg cursor-pointer" width="full" height="full" alt="" src={img} />
+                <img className="rounded-lg" width="full" height="full" alt="" src={img} />
 
         </figure>
     )

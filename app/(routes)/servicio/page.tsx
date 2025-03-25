@@ -211,8 +211,9 @@ const Services = () => {
                             </div> 
                             ))
                             }
-                            <Button className="w-full mt-8 md:mt-4 2xl:mt-8 bg-white text-black hover:bg-gray-200 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/>
-                            </Button>
+                            <Link href="/contactanos">
+                                <Button className="w-full mt-8 md:mt-4 2xl:mt-8 bg-white text-black hover:bg-gray-200 cursor-pointer">Contactar Servicio<ArrowRight className="h-4 w-4"/></Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
