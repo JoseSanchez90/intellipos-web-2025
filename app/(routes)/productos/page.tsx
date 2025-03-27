@@ -42,12 +42,10 @@ const Products = () => {
                 <div className="absolute flex flex-col items-center justify-center">
                     <div className="p-5 bg-opacity-50 rounded-l text-center max-w-4xl space-y-6 sm:space-y-4">
                         <h1 className="font-bold tracking-tighter text-white text-3xl md:text-5xl">Hardware <span className="text-green-400 font-bold">Compatible</span></h1>
-                        <p className="text-sm md:text-xl text-white font-semibold">Ofrecemos equipos NCR con la última tecnología, reconocidos por su robustez y confiabilidad. Como la marca líder en Retail, Banca y Hospitalidad, contamos con una línea completa de soluciones para todas las necesidades, respaldadas por soporte de hardware a nivel nacional.</p>
-                        <div className="">
-                            <Link href="/contactanos">
-                                <Button className="w-56 bg-green-600 text-white hover:bg-green-500 cursor-pointer">Solicitar más información <ArrowRight className="h-4 w-4" /></Button>
-                            </Link>
-                        </div>
+                        <p className="text-sm md:text-xl text-white font-semibold">Ofrecemos equipos con la última tecnología, reconocidos por su robustez y confiabilidad. Como la marca líder en Retail, Banca y Hospitalidad, contamos con una línea completa de soluciones para todas las necesidades, respaldadas por soporte de hardware a nivel nacional.</p>
+                        <Link href="/contactanos">
+                            <Button className="w-56 bg-green-600 text-white hover:bg-green-500 cursor-pointer">Solicitar más información <ArrowRight className="h-4 w-4" /></Button>
+                        </Link>
                     </div>
                 </div>
             </div>
